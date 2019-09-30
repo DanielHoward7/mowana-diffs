@@ -1,0 +1,79 @@
+/* ===== STATE (expand/collapse visible/hidden !important-tags) ===== */
+ul
+{
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+
+	text-align: left;
+}
+// font-styles ===============================================
+.italic,
+em,
+i
+{
+	font-style: italic !important;
+}
+.bold,
+b,
+strong
+{
+	font-weight: $font-weight--bold !important;
+}
+.bold-italic
+{
+	font-weight: $font-weight--bold !important;
+	font-style: italic !important;
+}
+// font-decorations ===============================================
+.td-u
+{
+	text-decoration: underline !important;
+}
+//text-transform ==============================================
+.tt-u
+{
+	text-transform: uppercase !important;
+}
+.tt-n
+{
+	text-transform: none !important;
+}
+.ta-c
+{
+	h1,
+	h2,
+	h3,
+	h4,
+	p,
+	li
+	{
+		text-align: center !important;
+	}
+}
+
+@media only screen and (max-width: 1025px) and (min-width:768px){
+	.Card-TimerBox {
+		font-size: 12px;
+	}
+
+	.Card-Title{
+	font-size:12px;
+	}
+	.RecentlyAdded .card-text {
+		font-size: 20px;
+	}
+	.RecentlyAdded .card-title {
+		font-size: 15px;
+	}
+	.RecentlyAdded .card {
+		// width: 125px !important;
+	}
+}
+
+@media only screen and (max-width: 1399px) and (min-width:1200px){
+	.RecentlyAdded .card {
+		width: 300px !important;
+	}
+}

@@ -1,0 +1,899 @@
+// Media Breakpoints ==============================
+$breakpoint-desktop: 2560px;
+$breakpoint-desktoplg: 1920px;
+$breakpoint-stdesktop: 1440px;
+$breakpoint-laptop: 1025px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 425px;
+$breakpoint-xs-mobile: 320px;
+
+// Font Stacks ==============================
+$font-family--primary: 'Work Sans', sans-serif;
+$font-family--heading: 'Roboto', sans-serif;
+
+// Font Weights ==============================
+$font-weight--xlight:			200;
+$font-weight--light:			400;
+$font-weight--regular:		    400;
+$font-weight--medium:			500;
+$font-weight--sbold:			600;
+$font-weight--bold:				700;
+$font-weight--xbold:			800;
+
+// Descriptive Base Color ====================t
+$primary-grey: #373236; //--------------text
+$prime-color: #CF6227;
+$bg-grey: #4e4e4e;
+$heading-light: #454545;
+$heading-dark: #1E1E1E;
+$btn-green: #00b160;
+$rwpink: #ff6981;
+$rslts-grey: #707070;
+$rwborder: #e2e2e2;
+$pretty--color-info:#CF6227;
+
+// -------------------------------lights/darks
+$white: #fafbfb;
+$black: #222;
+
+// DesignSize =======================================
+$sml:		24.969; //400
+$sm: 		35.969; // 576
+$mdm:		37.469; //600
+$ipad:	47.969; //768
+$lg:		61.95; //992px
+$big:		87.469; //1400
+$dz:		119.969; //1920
+
+// Text =======================================
+html {
+	font-size: 16px;
+}
+// $base__lh: 1.5rem;
+$base__lh: 24px;
+$base__ih: 20px;
+
+// bootstrap var overrides
+$btn-padding-y:  0;
+$btn-padding-x:  $base__lh;
+$primary: $prime-color;
+$font-size-base: 1rem;
+$btn-line-height: $base__lh*2; //48px
+$btn-border-radius: 24px;
+$btn-focus-box-shadow : none;
+$nav-tabs-link-active-color: $primary-grey;
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+$navbar-dark-color: #ffffff;
+$navbar-dark-active-color: $primary-grey;
+$navbar-dark-hover-color: lighten(#ef038a, 20%);
+$input-padding-y: 0;
+$input-padding-x: $base__lh;
+$input-height: $base__lh*2;
+$background-color: white;
+$input-line-height: $base__lh*2;
+$input-border-width: 0;
+$input-border-radius: 0;
+$form-group-margin-bottom: $base__lh;
+$card-border-width: 1px;
+$card-border-color: #e7e8e7;
+$card-border-radius: 0;
+$card-bg: white;
+$card-spacer-x: $base__lh;
+$card-spacer-y: 0;
+
+$carousel-control-width: auto;
+$carousel-indicator-width: auto;
+$carousel-indicator-height: auto;
+
+$pagination-padding-y: 0;
+$pagination-padding-x: 6px;
+$pagination-color: #939393;
+$pagination-border-width: 0;
+$pagination-border-color: transparent;
+$pagination-line-height: $base__lh;
+$pagination-hover-color: #454545;
+$pagination-active-color: #454545;
+$pagination-disabled-bg: transparent;
+$pagination-bg: transparent;
+$pagination-hover-bg: transparent;
+$pagination-active-bg: transparent;
+$pagination-focus-outline: none;
+$pagination-focus-box-shadow: none;
+$pagination-active-border-color: none;
+
+// @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+// @import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+// @import "../../node_modules/bootstrap/scss/code";
+@import "../../node_modules/bootstrap/scss/grid";
+// @import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/button-group";
+@import "../../node_modules/bootstrap/scss/input-group";
+@import "../../node_modules/bootstrap/scss/custom-forms";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/card";
+// @import "../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../node_modules/bootstrap/scss/pagination";
+// @import "../../node_modules/bootstrap/scss/badge";
+// @import "../../node_modules/bootstrap/scss/jumbotron";
+// @import "../../node_modules/bootstrap/scss/alert";
+@import "../../node_modules/bootstrap/scss/progress";
+@import "../../node_modules/bootstrap/scss/media";
+@import "../../node_modules/bootstrap/scss/list-group";
+@import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/tooltip";
+@import "../../node_modules/bootstrap/scss/popover";
+@import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/utilities";
+// @import "../../node_modules/bootstrap/scss/print";
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+@import "mixins";
+
+@media (min-width:769px) {
+//Hover Effects Styles
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+}
+
+body {
+    -webkit-text-size-adjust: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+//
+
+//Font Awesome
+
+.fab {
+    font-style: normal !important;
+    color: $prime-color;
+    padding-right: 5px;
+    font-size: 18px;
+}
+
+.fas {
+    font-style: normal !important;
+    color: $prime-color;
+    padding-right: 5px;
+    font-size: 18px;
+}
+
+.fa-3 {
+    font-size: 35px;
+}
+
+// bootstrap hard overrides
+.btn {
+	border: none;
+    //background-color: $prime-color;
+	color: white;
+	font-weight: $font-weight--sbold;
+	text-transform: uppercase;
+	min-width: 144px;
+	&:link,
+	&:visited,
+	&:hover,
+	&:active {
+		color: inherit;
+		border-color: inherit;
+	}
+}
+
+.navbar-dark {
+	.navbar-nav {
+		.show > .nav-link,
+		.active > .nav-link,
+		.nav-link.show,
+		.nav-link.active {
+			span {border-bottom: 2px solid $prime-color;}
+		}
+	}
+}
+.navbar-dark
+.navbar-nav
+.nav-link:hover,
+.navbar-dark
+.navbar-nav
+.nav-link:focus {
+	color: $prime-color;
+}
+
+.navbar {
+	border: none;
+	margin-bottom: 0;
+	padding-top: $base__lh;
+	padding-bottom: $base__lh;
+	text-transform: uppercase;
+	@include random-min(62) {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+a.inlineLink {
+	&:link,
+	&:visited,
+	&:hover,
+	&:active
+	{
+		color: $primary-grey;
+	}
+}
+
+input[type="text"], textarea {
+	outline: none;
+	box-shadow:none !important;
+}
+
+.carousel-indicators {
+	position: relative;
+	right: 0;
+	bottom: $base__lh;
+	left: 0;
+	z-index: 15;
+	display: flex;
+	justify-content: center;
+	padding-left: 0; // override <ol> default
+	// Use the .carousel-control's width as margin so we don't overlay those
+	margin-right: $carousel-control-width;
+	margin-left: $carousel-control-width;
+	list-style: none;
+
+	li {
+		position: relative;
+		flex: 0 1 auto;
+		width: $carousel-indicator-width;
+		height: $carousel-indicator-height;
+		margin-right: $carousel-indicator-spacer;
+		margin-left: $carousel-indicator-spacer;
+		text-indent: 0;
+		cursor: pointer;
+		background-color: transparent;
+
+		// Use pseudo classes to increase the hit area by 10px on top and bottom.
+		&::before {
+			position: relative;
+			top: 0;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 10px;
+			content: "";
+		}
+		&::after {
+			position: relative;
+			bottom: 0;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 10px;
+			content: "";
+		}
+	}
+
+	.active {
+		background-color: transparent;
+	}
+}
+
+a.LinkBlock {
+	&:link,
+	&:visited,
+	&:hover,
+	&:active {
+		color: inherit;
+	}
+}
+
+.btn.btn-primary {
+	&:link,
+	&:visited,
+	&:hover,
+	&:active {
+		color: white;
+	}
+}
+
+.MyWatchListNav a{
+    font-size: .875rem;
+    color: #2A2832;
+}
+
+.MyWatchListNav a span{
+    font-weight: 600;
+    color: #D3163D;
+}
+
+.card.wishlistrowA {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #EFEFEF;
+    background-clip: border-box;
+    border: 1px solid #EFEFEF;
+    border-radius: 0;
+    margin-bottom:25px;
+}
+
+.card.wishlistrowB {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+	margin-bottom:25px;
+}
+
+.BlockA li{
+
+background-color: #FFFFFF;
+}
+
+.BlockB li{
+
+background-color: #F4F4F4;
+}
+
+.WatchListPage .card-text {
+    color: #D3163D;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.WcC__CarLinksWatchList a {
+    text-align: center;
+    min-width: 50px;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #D3163D;
+    display: block;
+    padding: 0px 12px;
+    line-height: 35px;
+    height: 35px;
+    border-radius: 20px;
+    color: #ffffff;
+    border: 1px solid #f5f6f5;
+}
+
+
+.WatchListPage .card-title {
+    font-size: 19px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 24px;
+}
+
+.WcC__CarLinksWatchList {
+    margin-top: 10px;
+}
+
+.WacthListCarBlock .WcC__CarInfo{
+     white-space: initial;
+}
+
+.NavBarTools .nav-item--Watchlist .MultiSkeletor {
+    height: auto !important;
+    max-height: 480px;
+}
+
+.WatchListPage .Card-CounterBox {
+	 color: #454545;
+    font-size: 13px;
+    height: 24px;
+    width: 100%;
+    top: -5px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+@media (min-width: 47.969em){
+.SFinderBlockWL {
+    min-width: 190px;
+    max-width: 190px;
+    margin-right: 24px;
+    margin-bottom:25px;
+}
+}
+
+@media (min-width: 87.469em)
+{
+.VdBlockWL {
+    margin-right: 0px;
+}
+}
+
+
+   @media (min-width: 47.969em) {
+      .Obj-Fit__TodaysFeaturedPropertyWishList img {
+        height:auto;
+         } 
+     }
+
+ @media (max-width: 47.969em) {
+     .Obj-Fit__TodaysFeaturedPropertyWishList img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center center;
+    object-position: center center;
+    height: 192px;
+}
+}
+
+.Obj-Fit__TodaysFeaturedPropertyWishList {
+    width: 30%;
+}
+
+/* New Block */
+
+.WatchPadding {
+	padding: 0px;
+    margin-left: -7px;
+}
+
+   @media (min-width: 47.969em) {
+      .Obj-Fit__TodaysFeaturedPropertyWatchList img {
+        max-height:157px;
+         } 
+     }
+
+.Obj-Fit__TodaysFeaturedPropertyWatchList {
+    width: 220px;
+}
+
+.WatchListCar:nth-of-type(odd) {
+    background-color: #EFEFEF;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    height:157px;
+}
+
+.WatchListCar:nth-of-type(even) {
+    background-color: #ffffff;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    height:157px;
+}
+
+@media (max-width: 767px) {
+.WatchPadding {
+    padding: 0px;
+    margin-left: -7px;
+    margin-right: -7px;
+    width: auto;
+}
+}
+
+@media (min-width: 992px) and (max-width:1199px){
+	.card-bodyWatchList {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-left: 25px;
+}
+}
+
+@media (max-width: 991px) {
+.col-lg-12.ListDescription {
+	display:none !important;
+}
+.WatchListCar:nth-of-type(odd) {
+    background-color: #EFEFEF;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    height:auto;
+}
+
+.WatchListCar:nth-of-type(even) {
+    background-color: #ffffff;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    height:auto;
+}
+.col-lg-2.col-md-6.float-left.DiscList {
+    text-align: center;
+    margin-top:25px;
+}
+h3.DiscList {
+    display: block !important;
+    margin-bottom: 0px;
+}
+.bidPrice {
+    padding-top: 0px !important;
+    background-color: #fff0;
+    border: 0px;
+    text-align:center;
+}
+.bidInt {
+    padding-top: 0px !important;
+    background-color: #fff0;
+    border: 0px;
+    text-align:center;
+}
+.Obj-Fit__TodaysFeaturedPropertyWatchList {
+    width: 280px;
+}
+.Obj-Fit__TodaysFeaturedPropertyWatchList img {
+    max-height: 200px;
+}
+
+.Card-TimerBox {
+    font-size: 13px !important;
+}
+.WcC__CarLinksWatchList a {
+    text-align: center;
+    min-width: 50px;
+    max-width: 250px;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #D3163D;
+    display: block;
+    padding: 0px 12px;
+    line-height: 35px;
+    height: 35px;
+    border-radius: 20px;
+    color: #ffffff;
+    border: 1px solid #f5f6f5;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+h3.DiscList {
+    display: none;
+}
+
+.bidPrice{
+    padding-top: 38px;
+    background-color: #fff0;
+    border: 0px;
+}
+
+.bidInt{
+    padding-top: 38px;
+    background-color: #fff0;
+    border: 0px;
+}
+
+.Obj-Fit__TodaysFeaturedPropertyWatchList img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center center;
+    object-position: center center;
+}
+
+ @media (max-width: 47.969em) {
+
+.Obj-Fit__TodaysFeaturedPropertyWatchList {
+    width: auto;
+
+}
+ 	}
+
+.ContactFinderBlock {
+    min-width: 200px;
+    max-width: 300px;
+    margin-right: 35px;
+}
+
+.WatchListPage .CarFeatureListing li {
+ 	border-radius: 24px;
+    color: #939393;
+    font-weight: 700;
+    font-size: 9px;
+    font-size: 9px;
+    font-size: .5625rem;
+    -ms-flex: 0 0 24%;
+    flex: 0 0 20%;
+    max-width: 20%;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 2px;
+}
+
+.card-bodyWatchList {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+@media (min-width: 87.469em){
+.ContactVdBlock {
+    margin-right: 48px;
+    width: 100%;
+}
+}
+
+textarea.form-control {
+    border-radius: 24px;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.CFtext-info{
+    color: #D3163D;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.CFthin {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+    .calltext {
+        font-size:35px;
+    }
+
+@media (max-width:1024px){
+
+    .calltext {
+        font-size:25px;
+    }
+    .ContactFinderBlock {
+    min-width: 0px;
+    max-width: 0px;
+    margin-right: 0px;
+}
+.ContactVdBlock {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+}
+
+@media (max-width:425px){
+    .Obj-Fit__TodaysFeaturedPropertyWatchList img {
+        max-height: 260px;
+        width: 363px;
+}
+
+}
+
+.Whoops404CTaBlock{
+        margin-top: auto;
+    margin-bottom: auto;
+}
+
+.whoops404 {
+    font-size:84px !important;
+        margin-bottom: 15px !important;
+        color:#454545;
+}
+
+.whoops40432 {
+    font-size: 36px !important;
+    line-height: 36px !important;
+        margin-bottom: 15px !important;
+}
+
+.whoops404text {
+    font-size: 24px;
+    color:#D3163D;
+    font-weight: 400;
+        margin-bottom: 15px !important;
+
+}
+
+.whoops404textb {
+    font-size: 22px;
+    color:#000;
+        margin-bottom: 15px !important;
+
+}
+
+.browserupdateCTaBlock{
+        margin-top: auto;
+    margin-bottom: auto;
+}
+
+.browserupdate {
+    font-size:70px !important;
+        margin-bottom: 15px !important;
+        color:#454545 !important;
+}
+
+.browserupdate32 {
+    font-size: 36px !important;
+    line-height: 36px !important;
+        margin-bottom: 15px !important;
+}
+
+.browserupdatetext {
+font-size: 22px;
+    color: #454545;
+    font-weight: 400;
+    margin-bottom: 15px !important;
+
+}
+
+.browserupdatetextb {
+    font-size: 22px;
+    color:#000;
+        margin-bottom: 15px !important;
+
+}
+
+.browserupdatetextsmall{
+    font-size: 12px;
+}
+
+.browserupdatesubtext {
+    font-size: 20px;
+    color: #000;
+    margin-top: 25px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.IntroBox.Whoops {
+    padding-bottom:96px
+}
+
+
+@media (max-width:1024px){
+.FcBlock {
+    position: absolute;
+    top: 100%;
+}
+.IntroBox.Whoops {
+    padding-top: 96px;
+}
+.whoops404text {
+    font-size: 15px;
+    color: #D3163D;
+    font-weight: 400;
+    margin-bottom: 15px !important;
+}
+.whoops40432 {
+    font-size: 25px !important;
+    line-height: 25px !important;
+    margin-bottom: 15px !important;
+}
+.whoops404 {
+    font-size: 65px !important;
+    margin-bottom: 15px !important;
+}
+
+}
+
+@media (max-width: 768px){
+    .browserupdate {
+    font-size: 50px !important;
+    margin-bottom: 15px !important;
+    color: #454545 !important;
+}
+.browserupdatetext {
+    font-size: 16px;
+    color: #454545;
+    font-weight: 400;
+    margin-bottom: 15px !important;
+}
+.browserupdatesubtext {
+    font-size: 16px;
+    color: #000;
+    margin-top: 25px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.browser {
+    width: 50% !important;
+    text-align: -webkit-center;
+    margin-bottom: 15px !important;
+}
+
+}
+     /* New Block End */
+
+@include random-min(87.469) {
+	.container {
+		max-width: 1282px;
+	}
+}
+
+@import "registrationpage";
+@import "vue";
+@import "login";
+@import "404";
+@import "base";
+@import "module";
+@import "generalpage";
+@import "mainnav";
+@import "homepage";
+@import "getstarted";
+@import "recentlyadded";
+@import "searchresults";
+@import "officesearchresults";
+@import "sfinder";
+@import "headbanner";
+@import "featuredproperties";
+@import "officesearchbar";
+@import "footer";
+@import "getstartednonslider";
+@import "lightslider";
+@import "formstyling";
+@import "registerproperty";
+@import "watchlisting";
+@import "vehicledetails";
+@import "infobar";
+@import "placeoffer";
+@import "state";
+// @import "modules/baseline";

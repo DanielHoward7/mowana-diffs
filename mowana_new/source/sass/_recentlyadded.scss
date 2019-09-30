@@ -1,0 +1,109 @@
+/* ===== Recently Added Section ===== */
+
+.RecentlyAdded {
+	background-color: #fff;
+	padding-top: $base__lh;
+	@include random-min($ipad) {
+		padding-top: $base__lh*2;
+		padding-bottom: $base__lh*2;
+	}
+	a.btn {
+		color: white;
+		display: block;
+		margin: 0 auto $base__lh*2;
+		max-width: 238px;
+		width: 100%;
+		@include random-min($ipad) {
+			margin: $base__lh*2 auto;
+		}
+	}
+	h1 {
+		color: $heading-light;
+		font-size: 36px;
+		font-weight: $font-weight--xlight;
+		margin-bottom: $base__lh*2;
+		line-height: 48px;
+		text-align: center;
+		span {
+			color: $prime-color;
+		}
+		@include random-min($ipad) {
+			font-size: 48px;
+			line-height: 72px;
+		}
+	}
+	.card {
+		max-width:336px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: $base__lh*2;
+		border: none;
+		box-shadow: 0px 6px 20px -5px rgba(0,0,0,0.55);
+		@include random-min($ipad) {
+			margin-bottom: 0;
+		}
+	}
+	.card-title {
+		font-size: 21px;
+		font-weight: $font-weight--sbold;
+		text-align: center;
+		line-height: $base__lh;
+		@include random-min($ipad) {
+			font-size: 19px;
+		}
+	}
+	.card-text {
+		color: $prime-color;
+		font-size: 27px;
+		font-weight: $font-weight--light;
+		line-height: $base__lh*2;
+		text-align: center;
+		margin-bottom: 0;
+		@include random-min($ipad) {
+			font-size: 24px;
+		}
+	}
+	.Card-Additions {
+		color: #707070;
+		font-size: .9375rem;//15px
+		font-weight: $font-weight--light;
+		text-align: center;
+		margin-bottom: $base__lh/2;
+		@include random-min($ipad) {
+			font-size: .875rem;//14px
+		}
+	}
+	.card-body {
+		padding: 0 $base__lh/2 0;
+	}
+	.CarFeatureListing {
+		li {
+			background-color: #f5f6f5;
+			border-radius:$base__lh;
+			color: #939393;
+			font-weight: $font-weight--bold;
+			font-size: .5625rem;//9px
+			flex-grow: 1;
+			margin: 0 2px $base__lh/2;
+			line-height: $base__lh;
+			text-align: center;
+			@include random-min($ipad) {
+				font-size: .6875rem;//11px
+			}
+		}
+	}
+}
+
+.Obj-Fit {
+	@include e(RecentlyAdded) {
+		width: 100%;
+		img {
+			object-fit: cover;
+			object-position: center center;
+			height: $base__lh*8;
+			@include random-min($ipad) {
+				height: $base__lh*7;
+			}
+		}
+	}
+}

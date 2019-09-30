@@ -1,0 +1,224 @@
+/* ===== Featured Properties ===== */
+
+@media (max-width: 1399px) and (min-width: 1026px) {
+	.Card-Head {
+	width: 320px !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+}
+
+#FeaturedSection{
+	background-color: #ffffff;
+	padding-top: $base__lh;
+	@include random-min(87.469) {
+		.container {
+			max-width: 1440px;
+		}
+	}
+	@include random-min($ipad) {
+		padding-top: $base__lh*2;
+		padding-bottom: $base__lh*2;
+	}
+	a.btn {
+		color: white;
+		display: block;
+		margin: 0 auto $base__lh*2;
+		max-width: 238px;
+		width: 100%;
+		@include random-min($ipad) {
+			margin: $base__lh*2 auto;
+		}
+	}
+	h1 {
+		color: $heading-light;
+		font-size: 36px;
+		font-weight: $font-weight--xlight;
+		margin-bottom: $base__lh*2;
+		line-height: 48px;
+		text-align: center;
+		span {
+			color: $prime-color;
+		}
+		@include random-min($ipad) {
+			font-size: 48px;
+			line-height: 72px;
+		}
+	}
+	.card {
+		max-width:384px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: $base__lh*2;
+		border: none;
+		box-shadow: 0px 6px 20px -5px rgba(0,0,0,0.55);
+		@include random-min($ipad) {
+			margin-bottom: $base__lh*2;
+		}
+	}
+	.card-title {
+		font-size: 14px;
+		font-weight: $font-weight--sbold;
+		text-align: center;
+		line-height: $base__lh;
+		@include random-min($ipad) {
+			font-size: 23px;
+		}
+
+	}
+	.card-title-2 {
+		font-size: 20px;
+		font-weight: $font-weight--sbold;
+		text-align: center;
+		line-height: $base__lh;
+		@include random-min($ipad) {
+			font-size: 23px;
+		}
+		}
+	.card-text {
+		color: $prime-color;
+		font-size: 24px;
+		font-weight: $font-weight--light;
+		line-height: $base__lh;
+		text-align: center;
+		margin-bottom: $base__lh/2;
+		@include random-min($ipad) {
+			font-size: 29px;
+			line-height: $base__lh*2;
+		}
+	}
+	.card-body {
+		padding: $base__lh $base__lh/2 0;
+	}
+	.CarFeatureListing {
+		li {
+			background-color: #f5f6f5;
+			border-radius:$base__lh;
+			color: #939393;
+			font-weight: $font-weight--bold;
+			font-size: .5625rem;//9px
+			flex: 0 0 24%;
+			max-width: 24%;
+			margin-bottom: $base__lh;
+			line-height: $base__lh*1.5;
+			text-align: center;
+			@include random-min($ipad) {
+				font-size: .6875rem;//11px
+			}
+		}
+	}
+}
+
+@media (max-width: $breakpoint-laptop) {
+
+	.Card-Head {
+	width: 305px !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+	}
+
+@media (max-width: $breakpoint-tablet) {
+
+	.Card-Head {
+	width: 330px !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+	}
+
+@media (max-width: $breakpoint-mobile) {
+
+	.Card-Head {
+	width: 320px !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+	}
+
+	@media (max-width: $breakpoint-xs-mobile) {
+
+	.Card-Head {
+	width: 290px !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+	}
+
+.Card-CounterBox {
+	color: #454545;
+	font-size: 13px;
+	height: $base__lh;
+	position: absolute;
+	top: -$base__lh;
+	width: 100%;
+}
+
+.Card-Head {
+	width: 384px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Cost-Label {
+	padding: 10px 24px 15px;
+	color: $prime-color;
+	font-size: $base__lh;
+	font-weight: 400;
+}
+
+.Featured-Details {
+	padding: 25px 24px 10px;
+	font-size: 14px;
+}
+
+.Card-More-Btn {
+    padding: 10px 24px 36px;
+}
+
+.Card-Title {
+	font-size: 14px;
+	color: $prime-color;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	font-weight: 500;
+}
+
+.Card-Title-2 {
+	font-size: 20px;
+	color: $prime-color;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	font-weight: 500;
+}
+
+.Card-TimerBox {
+	line-height: $base__lh;
+	float: right;
+	font-size: 14px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+}
+
+.Card-Prop-Type{
+	background-color: #373236;
+    padding: 10px 24px 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+.Obj-Fit {
+	@include e(TodaysFeaturedProperty) {
+		width: 100%;
+		img {
+			object-fit: cover;
+			object-position: center center;
+			height: $base__lh*12 !important;
+			@include random-min($ipad) {
+				height: $base__lh*10;
+			}
+		}
+	}
+}
