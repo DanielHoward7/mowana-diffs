@@ -1,0 +1,41 @@
+/* ===== Watch Listing ===== */
+
+.TodaysFeaturedProperty,
+.RecentlyAdded {
+	.card-body {
+		position: relative;
+	}
+}
+
+a.AddToMyWatchlist {
+	display: block;
+	position: absolute;
+	top:0;
+	right: 0;
+	height: $base__lh*2;
+	width: $base__lh*2;
+	background-color: transparent;
+	@include background-2x( '../images/addmeliked-sprite', 'png', 48px, 96px, 0 -48px, no-repeat );
+}
+a.AddedToWatchlist {
+	background-position-y: 0px;
+}
+
+//details page
+.VdGalleryBlock {
+		position: relative;
+}
+a.DetailsAddToMyWatchlist {
+	display: block;
+	position: absolute;
+	top:0;
+	right: 0;
+	height: $base__lh*2;
+	width: $base__lh*3;
+	background-color: transparent;
+	z-index: 999;
+	@include background-2x( '../images/addmelikedwide-sprite', 'png', 72px, 96px, 0 -48px, no-repeat );
+}
+a.DetailsAddedToWatchlist {
+	background-position-y: 0px;
+}

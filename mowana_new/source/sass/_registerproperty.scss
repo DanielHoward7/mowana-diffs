@@ -1,0 +1,147 @@
+/* ===== Register Property ===== */
+
+.RpGalleryBlock {
+    max-width: 100% !important;
+        margin-bottom: 24px;
+        position: relative;
+}
+
+.Card-Title-Message-Reg {
+    font-size: 20px;
+    color: $prime-color;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    font-weight: 500;
+}
+
+
+.RpGalleryBlock img {
+    display: block;
+    height: 305px;
+    width: 100%;
+}
+
+.RpGalleryBlock .lSAction > a {
+    width: 52px;
+    display: block;
+    top: 30%;
+    height: 250px;
+    background-image: url(../images/controls.png);
+    background-size: 118px 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    margin-top: -16px;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    transition: opacity 0.35s linear 0s;
+    background-repeat: no-repeat;
+}
+
+.RpGalleryBlock .lSAction > a {
+    background-image: url(../images/controls@2x.png);
+}
+
+.RpGalleryBlock .lSAction > .lSPrev {
+    background-position: 0 0;
+    left: 0;
+}
+
+.RpGalleryBlock .lSAction > .lSNext {
+    background-position: -65px 0;
+    right: 0px;
+}
+
+.primg {
+	margin-top: 30px;
+}
+
+.checkboxlist {
+	margin-bottom: 25px;
+}
+
+.pretty {
+    position: relative;
+    display: block;
+    margin-right: 1em;
+    white-space: nowrap;
+    line-height: 1;
+    margin-top: 15px;
+}
+
+.pretty .state label {
+    position: initial;
+    display: inline-block;
+    font-weight: 400;
+    margin: 0;
+    text-indent: 1.5em;
+    min-width: calc(1em + 2px);
+}
+
+.pretty input:checked~.state.p-warning-o label:before, .pretty.p-toggle .state.p-warning-o label:before {
+    border-color: $prime-color;
+}
+
+.pretty.p-default:not(.p-fill) input:checked~.state.p-warning-o label:after {
+    background-color: $prime-color!important;
+}
+
+.pretty .state label:before {
+    border-color: $prime-color;
+}
+
+.Registerbtn {
+    border-radius: 0;
+    margin-top: 24px;
+}
+
+@media (max-width: $breakpoint-laptop) {
+
+.pretty {
+    position: relative;
+    display: block;
+    margin-right: 1em;
+    white-space: nowrap;
+    line-height: 0.8;
+    margin-top: 15px;
+}
+}
+
+@media (max-width: $breakpoint-tablet) {
+
+	.pretty {
+    line-height: 1;
+}
+
+	.primgtab{
+		margin-top: 30px;
+	}
+
+	.RpGalleryBlock img {
+    display: block;
+    height: 400px;
+    width: 100%;
+}
+
+.RpGalleryBlock .lSAction > a {
+	top: 40%;
+	}
+
+}
+
+@media (max-width: $breakpoint-xs-mobile) {
+
+		.RpGalleryBlock img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.RpGalleryBlock .lSAction > a {
+	top: 25%;
+	}
+
+
+	}

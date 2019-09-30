@@ -1,0 +1,165 @@
+<!-- @include includes/head-top.html -->
+<title>Mowana Online | Search Result</title>
+<!-- @include includes/head-btm.html -->
+
+		<section class="SearchResult">
+			<!-- @include includes/nav.html -->
+			<!-- @include includes/headbanner.html -->
+			<div class="container" style="margin-top: 48px; margin-bottom: 48px;">
+				<div class="DetailsPage__Content">
+					<div class="ContactFinderBlock">
+						<button id="branch1" class="branchactive">branch 1</button>
+						<button id="branch2" class="branch">branch 2</button>
+						<button id="branch3" class="branch">branch 3</button>
+						<button id="branch4" class="branch">branch 4</button>
+					</div>
+
+					
+
+					<div id="ID_1" class="col-lg-10">
+						<!-- @include includes/branch1.html -->
+
+					</div>
+
+					<div id="ID_2" class="col-lg-10" style="display: none;">
+						<!-- @include includes/branch2.html -->
+
+					</div>
+
+					<div id="ID_3" class="col-lg-10" style="display: none;">
+						<!-- @include includes/branch3.html -->
+
+					</div>
+
+					<div id="ID_4" class="col-lg-10" style="display: none;">
+						<!-- @include includes/branch4.html -->
+
+					</div>
+
+	
+
+		
+	</div><!-- end DetailsPage__Content -->
+</div><!-- end Container -->
+		</section><!-- end DetailsPage -->
+
+		<!-- @include includes/infobar.html -->
+		<!-- @include includes/footer.html -->
+		<!-- @include includes/scripts.html -->
+
+		<script src="js/lightslider.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				console.log('lock & load');
+				$('.nav-item').removeClass('active');
+				$('.nav-item--Home').addClass('active');
+				$( ".active > a " ).append( '<span class="sr-only"> (current)</span>' );
+
+				function reload_bsCollapse() {
+					if($(window).width() <= 767) {
+						$("#h1Toggler").attr({
+							'data-toggle': 'collapse',
+							'data-target': '#openRefineSearch'
+						});
+					} else {
+						$("#h1Toggler").removeAttr('data-toggle data-target');
+						$("#openRefineSearch").addClass('show');
+					}
+				}
+
+				$(".DetailsAddToMyWatchlist").click(function(){
+					$(this).toggleClass("DetailsAddedToWatchlist");
+				});
+
+				reload_bsCollapse();
+
+				$(window).on("resize", function () {
+					reload_bsCollapse();
+				});
+
+				var slider = $('#image-gallery').lightSlider({
+					pauseOnHover: true,
+					adaptiveHeight: true,
+					gallery:true,
+					item:1,
+					thumbItem:4,
+					slideMargin: 4,
+					speed:500,
+					pause: 5000,
+					auto:true,
+					loop:true,
+					thumbMargin:4,
+					responsive : [
+					{
+						breakpoint:1439,
+						settings: {
+							thumbItem:6,
+						}
+					},
+					{
+						breakpoint:991,
+						settings: {
+							thumbItem:4
+						}
+					}
+					],
+					onSliderLoad: function() {
+						$('#image-gallery').removeClass('cS-hidden');
+					}
+				});
+
+				$(window).on("resize", function () {
+					slider.refresh();
+				});
+
+					$("#branch1").click(function() {
+  						$( "#ID_1" ).show();
+  						$( "#ID_2" ).hide();
+  						$( "#ID_3" ).hide();
+  						$( "#ID_4" ).hide();
+  						$("#branch2").css("background-color", "#ffffff");
+  						$("#branch3").css("background-color", "#ffffff");
+  						$("#branch4").css("background-color", "#ffffff");
+  						$("#branch1").css("background-color", "#E0E0E0");
+				});
+
+					$("#branch2").click(function() {
+  						$( "#ID_1" ).hide();
+  						$( "#ID_2" ).show();
+  						$( "#ID_3" ).hide();
+  						$( "#ID_4" ).hide();
+  						$("#branch1").css("background-color", "#ffffff");
+  						$("#branch3").css("background-color", "#ffffff");
+  						$("#branch4").css("background-color", "#ffffff");
+  						$("#branch2").css("background-color", "#E0E0E0");
+				});
+
+					$("#branch3").click(function() {
+  						$( "#ID_1" ).hide();
+  						$( "#ID_2" ).hide();
+  						$( "#ID_3" ).show();
+  						$( "#ID_4" ).hide();
+  						$("#branch1").css("background-color", "#ffffff");
+  						$("#branch2").css("background-color", "#ffffff");
+  						$("#branch4").css("background-color", "#ffffff");
+  						$("#branch3").css("background-color", "#E0E0E0");
+				});
+
+					$("#branch4").click(function() {
+  						$( "#ID_1" ).hide();
+  						$( "#ID_2" ).hide();
+  						$( "#ID_3" ).hide();
+  						$( "#ID_4" ).show();
+  						$("#branch1").css("background-color", "#ffffff");
+  						$("#branch2").css("background-color", "#ffffff");
+  						$("#branch3").css("background-color", "#ffffff");
+  						$("#branch4").css("background-color", "#E0E0E0");
+				});
+
+
+
+			});
+		</script>
+	</body>
+</html>

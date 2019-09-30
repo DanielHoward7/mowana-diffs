@@ -1,0 +1,541 @@
+/* ===== Vehicle Details Page ===== */
+.fa-22xl {
+    font-size: 12px !important;
+    color: $prime-color !important;
+}
+
+
+.tab-content.offer_group {
+    border: 0px;
+    padding-top: 0px !important;
+    margin-bottom: 40px;
+}
+
+
+.DetailsPage {
+	@include e(Content) {
+		@include random-min($ipad) {
+			display: flex;
+		}
+		@include random-from-to($ipad, $big) {
+			flex-wrap: wrap;
+		}
+	}
+}
+
+.new4 {
+    border-top: 1px solid $prime-color;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+td.detail_td_title {
+    font-size: 14px;
+    padding: 17px 0px;
+    text-align: left;
+}
+
+td.detail_td_input {
+	text-align: right;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+table.details_table {
+    width: 100%;
+}
+
+tr.detail_row {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+/*.loggedbutton {
+    background-color: $prime-color;
+    color: #fff;
+    padding: 9px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+        width: 180px;
+    font-size: 12px;
+}*/
+
+.loggedbutton {
+    padding: 9px;
+    margin-bottom: 30px;
+    border: 1px solid #E0E0E0;
+    background-color: #fff;
+    color: #454545;
+    margin-top: 10px;
+    width: 180px;
+    font-size: 12px;
+}
+
+.loggedbutton:focus {
+	background-color: $prime-color;
+    padding: 9px;
+    margin-bottom: 30px;
+    border: 0px solid #E0E0E0;
+    color: #ffffff;
+    margin-top: 10px;
+    width: 180px;
+    font-size: 12px;
+}
+
+.loggedbuttondown {
+    padding: 9px;
+    margin-bottom: 30px;
+    border: 0px solid #454545;
+    background-color: $prime-color;
+    color: #ffffff;
+    margin-top: 10px;
+    width: 180px;
+    font-size: 12px;
+}
+
+.fa-1xl {
+	font-size: 12px !important;
+	color:#ffffff;
+}
+
+.shareicons {
+    background-color: #373236ad;
+    height: 50px;
+    position: absolute;
+    z-index: 900;
+    width: 100%;
+    text-align: center;
+}
+
+.IconsAddToMyWatchlistAdd {
+    display: block;
+    height: 48px;
+    width: 125px;
+    z-index: 999;
+    padding-left: 15px;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.IconsAddToMyWatchlistComp {
+    display: block;
+    height: 48px;
+    width: 125px;
+    z-index: 999;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.IconsAddToMyWatchlistShare{
+    display: block;
+    height: 48px;
+    width: 125px;
+    z-index: 999;
+    padding-left: 15px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+// Vd = vehicle detail
+
+.VdBlock {
+	margin-bottom: $base__lh;
+	@include random-from-to($ipad, $big) {
+		flex-grow: 2;
+		width:50%;
+		height: auto; // was 200px for height hack reflow
+	}
+	@include random-min($big) {
+		margin-right: $base__lh*2;
+	}
+}
+
+.DetailsPage {
+	.VdBlockDetails {
+		h1 {
+			font-size: 30px;
+			font-weight: $font-weight--sbold;
+			line-height: $base__lh*1.5;
+			margin-bottom: $base__lh;
+			text-align: center;
+			span {
+				color: $prime-color;
+				font-weight: $font-weight--light;
+				@include random-max(64) {
+					display: block;
+				}
+			}
+			@include random-min(64) {
+				font-size: 36px;
+				line-height: $base__lh*2;
+				text-align: left;
+			}
+		}
+	}
+}
+
+.VdGalleryBlock {
+	@include random-min($big) {
+		max-width:816px;
+	}
+	@include random-min($big) {
+		margin-bottom: $base__lh;
+	}
+	img {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+	.lSSlideOuter .lSPager.lSGallery {
+		margin-top: 24px !important;
+	}
+	.lSSlideOuter .lSPager.lSGallery li.active,
+	.lSSlideOuter .lSPager.lSGallery li:hover {
+		border-radius: 0;
+	}
+	.lSAction > a {
+		width: 52px;
+		display: block;
+		top: 40%;
+		height: 250px;
+		@include background-2x( '../images/controls', 'png', 118px, 150px, center, no-repeat );
+		cursor: pointer;
+		position: absolute;
+		z-index: 99;
+		margin-top: -16px;
+		opacity: 0.8;
+		-webkit-transition: opacity 0.35s linear 0s;
+		transition: opacity 0.35s linear 0s;
+		background-repeat: no-repeat;
+	}
+	.lSAction > .lSPrev {
+		background-position: 0 0;
+		left: 0;
+	}
+	.lSAction > .lSNext {
+		background-position: -65px 0;
+		right: 0px;
+	}
+}
+
+.VdMPr {
+	margin-bottom: $base__lh;
+	@include random-min($big) {
+		display: none;
+	}
+}
+
+.DetailsPage {
+	.Vd__Accs {
+		h1 {
+			font-size: 1.125rem;//18px
+			font-weight: $font-weight--light;
+			line-height: $base__lh;
+		}
+		p {
+			font-size: .875rem;//14
+			margin-bottom: 0;
+		}
+	}
+}
+.Vd__Accs {
+	background-color: #fff;
+	padding: $base__lh;
+	box-shadow: 0px 3px 20px -4px rgba(0,0,0,0.75);
+	margin-bottom: $base__lh;
+	@include random-min($ipad) {
+		margin-bottom: $base__lh*2;
+	}
+}
+.DetailsPage {
+	.Vd_FullSpecs {
+		.nav {
+			background-color: #ececec;
+		}
+		.nav-tabs .nav-link {
+			color: $primary-grey;
+			border-radius: 0;
+			border-bottom: 1px solid white;
+			line-height: ($base__lh*2)-1;
+		}
+		.nav-tabs .nav-link.active {
+			background-color: #fff;
+			border-color: darken(#f8f8f8, 7.5%);
+			color: $prime-color;
+			font-weight: $font-weight--medium;
+			@include random-min(75) {
+				color: $primary-grey;
+			}
+		}
+		.nav-link {
+			font-size: 14px;
+			line-height: ($base__lh*2)-1;
+			border-bottom: 1px solid darken(#ececec, 7.5%);
+			padding: 0 $base__lh;
+			@include random-min(75) {
+				line-height: $base__lh*2;
+				border-bottom: 0;
+			}
+		}
+		.tab-content {
+			background-color: #fff;
+			border: 1px solid $prime-color;
+			padding: ($base__lh)-1 $base__lh;
+			@include random-min(75) {
+				border-color: #ececec;
+				min-height: $base__lh*16;
+			}
+		}
+	}
+	.VdTabContent,
+	.VdTabContentDetail {
+		.row {
+			margin-bottom: $base__lh;
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+		p {
+			font-size: 14px;
+			margin-bottom: 0;
+			span {
+				font-weight: $font-weight--medium;
+			}
+		}
+	}
+	.VdTabContentDetail {
+		img {
+			margin-bottom: $base__lh;
+		}
+		&:last-of-type {
+			img {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.Card-Title-Tab {
+	    font-size: 20px;
+    color: $prime-color;
+    padding-bottom: 10px;
+    font-weight:400;
+}
+
+a.TabText {
+	color:#454545;
+	    font-size: 14px;
+}
+
+li.TabDetails {
+    width: auto !important;
+    margin-right: 10px;
+}
+
+a.TabText.active {
+	color:$prime-color;
+}
+
+li.active.TabDetails {
+    background-color: #fff;
+    border-top: 1px solid #E0E0E0;
+    border-left: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0;
+}
+
+li.TabDetails {
+    background-color: #fff;
+    border-top: 1px solid #E0E0E0;
+    border-left: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0;
+}
+
+.TabSection {
+	    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.55);
+	    padding: 15px;
+}
+
+.tab-content {
+    border: 1px solid #E0E0E0;
+}
+
+div#mobilesearch {
+    display: none;
+}
+
+		.Regbutton {
+    background-color: $prime-color;
+    color: #fff;
+    padding: 14px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.Brochurebutton {
+    padding: 14px;
+    margin-bottom: 30px;
+    border: 1px solid #454545;
+    background-color: #fff;
+    color: #454545;
+    margin-top: 10px;
+}
+
+.nav-tabs {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: left;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-left: 0px;
+}
+
+.new1 {
+  border-top: 1px solid $prime-color;
+}
+
+#RecentlyAddedProp {
+	border-top: 1px solid #E0E0E0;
+}
+
+	@media (max-width: $breakpoint-tablet) {
+
+.offerbutton {
+    background-color: $prime-color;
+    color: #fff;
+    padding: 14px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 150px;
+    font-size: 10px;
+}
+
+.loggedbutton {
+    padding: 14px;
+    margin-bottom: 30px;
+    border: 1px solid #454545;
+    background-color: #fff;
+    color: #454545;
+    margin-top: 10px;
+    width: 150px;
+    font-size: 10px;
+}
+
+}
+
+	@media (max-width: $breakpoint-mobile) {
+
+		.offerbutton {
+    background-color: $prime-color;
+    color: #fff;
+    padding: 14px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 180px;
+    font-size: 12px;
+}
+
+.loggedbutton {
+    padding: 14px;
+    margin-bottom: 30px;
+    border: 1px solid #454545;
+    background-color: #fff;
+    color: #454545;
+    margin-top: 10px;
+    width: 180px;
+    font-size: 12px;
+}
+
+
+.Contact-Text-Title {
+    color: #fff;
+    font-size: 12px;
+}
+
+		li.TabDetails {
+    width: 100% !important;
+    margin-right: 0px;
+}
+
+div#mobilesearch {
+    display: block !important;
+}
+
+.IconsAddToMyWatchlistAdd {
+    display: block;
+    height: 48px;
+    width: 185px;
+    z-index: 999;
+    padding-left: 15px;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.IconsAddToMyWatchlistComp {
+    display: block;
+    height: 48px;
+    width: 111px;
+    z-index: 999;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.IconsAddToMyWatchlistShare{
+    display: block;
+    height: 48px;
+    width: 111px;
+    z-index: 999;
+    padding-left: 15px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+		.Regbutton {
+    background-color: $prime-color;
+    color: #fff;
+    padding: 10px !important;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.fa-1x {
+	font-size: 10px;
+}
+
+.Brochurebutton {
+    padding: 10px !important;
+    margin-bottom: 30px;
+    border: 1px solid #454545;
+    background-color: #fff;
+    color: #454545;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+		}
+
+			@media (max-width: $breakpoint-xs-mobile) {
+
+		.offerbutton {
+    background-color: $prime-color;
+    color: #fff;
+    padding: 14px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 130px;
+    font-size: 8px;
+}
+
+.loggedbutton {
+    padding: 14px;
+    margin-bottom: 30px;
+    border: 1px solid #454545;
+    background-color: #fff;
+    color: #454545;
+    margin-top: 10px;
+    width: 130px;
+    font-size: 8px;
+}
+
+			}

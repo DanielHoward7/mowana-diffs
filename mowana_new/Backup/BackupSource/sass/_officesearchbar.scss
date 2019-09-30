@@ -1,0 +1,411 @@
+/* ===== Office Search Bar ===== */
+
+/* ===== UI Slider Start ===== */
+
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 18px;
+    height: 18px;
+    cursor: default;
+    -ms-touch-action: none;
+    touch-action: none;
+    border-radius: 9px;
+}
+
+input#inputMinPrice {background-color: #0000;}
+
+input#inputMinSize {background-color: #0000;}
+
+input#inputMinPriceSale {background-color: #0000;}
+
+input#inputMinSizeSale {background-color: #0000;}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -0.5em;
+    margin-left: -.6em;
+}
+
+.ui-slider-horizontal {
+    height: 5px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 0px;
+    background: $prime-color;
+    font-weight: normal;
+    color: #454545;
+}
+
+/* ===== UI Slider Finish ===== */
+
+.FindYourVechile {
+	h1 {
+		color: $heading-light;
+		font-size: 48px;
+		font-weight: $font-weight--xlight;
+		margin-bottom: 0;
+		@include random-min($ipad) {
+			font-size: 48px;
+		}
+	}
+}
+
+.sliderlabels {
+    font-size: 10px !important;
+    margin-top: 25px;
+}
+
+.closesearch {
+	display: none;
+}
+
+.form-control {
+	font-size: 14px;
+}
+
+.SearchBarIcon {
+		background-color: $prime-color;
+	width:168px;
+	height: 160px;
+	border: 0px;
+	margin:auto;
+}
+
+.SearchBottom {
+    margin-top: 65px;
+}
+
+.SearchBottomBlock {
+    margin-top: 23px;
+}
+
+
+
+@media (max-width: $breakpoint-tablet) {
+
+	#OfficeSearch {
+	margin-top: 0px !important;
+}
+
+div#size-range {
+    margin-top: 50px;
+}
+
+div#price-range {
+    margin-top: 50px;
+}
+
+.SearchBottom {
+    margin-top: 20px;
+    padding-top: 50px;
+}
+
+.sliderleft {
+	float: left;
+}
+
+	.nav-tabs {
+    border-bottom: 0px;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+	#OfficeSearch {
+    z-index: 9999;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.col-sm-6 {
+	width:50%;	
+}
+
+.closesearch {
+    display: block;
+    padding: 15px;
+    margin-top: -45px;
+    float: right;
+}
+
+.nav-tabs > li, .nav-pills > li {
+    float: none;
+    display: inline-block;
+    background-color: #CF6227;
+    width: 130px !important;
+    padding: 10px !important;
+}
+
+section#OfficeSearch {
+    background-color: #4e4e4ee0;
+    padding-top: 45px;
+}
+
+.tab-content.search {
+    background-color: #4e4e4e00 !important;
+    padding: 30px 0px;
+}
+
+.SearchBarIcon {
+    background-color: #DF6D27;
+    width: 268px;
+    height: 168px;
+    border: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.container.quoinsearch {
+	padding: 0px;
+}
+
+.MultiInputBarForm {
+	label {
+		color: white;
+		font-weight: 400;
+		font-size: 16px;
+		margin-bottom: $base__lh;
+	}
+	display: grid !important;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.MultiInputBarForm .form-row {
+    width: 100% !important;
+}
+
+.MultiInputBarForm .form-group {
+    width: 192px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+	}
+
+@media (max-width: $breakpoint-mobile) {
+	#OfficeSearch {
+    z-index: 9999;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+
+.form-group.col-sm-12.col-md-6.col-lg-4 {
+    width: 100%;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+
+.form-group.col-sm-12.col-md-6.col-lg-2 {
+	    width: 100%;
+		padding-left: 25px;
+  		padding-right: 25px;
+}
+
+.form-group.col-sm-12.col-md-12.col-lg-6 {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.col-sm-6 {
+	width:50%;	
+}
+
+div#size-range {
+    margin-top: 50px;
+}
+
+div#price-range {
+    margin-top: 50px;
+}
+
+.sliderleft {
+	float: left;
+}
+
+.SearchBottom {
+    margin-top: 20px;
+    padding-top: 50px;
+}
+
+.closesearch {
+    display: block;
+    padding: 15px;
+    margin-top: -45px;
+}
+
+.nav-tabs > li, .nav-pills > li {
+    float: none;
+    display: inline-block;
+    background-color: #CF6227;
+    width: 130px !important;
+    padding: 10px !important;
+}
+
+section#OfficeSearch {
+    background-color: #4e4e4ee0;
+    padding-top: 45px;
+}
+
+.tab-content.search {
+    background-color: #4e4e4e00 !important;
+    padding: 30px 0px;
+}
+
+.SearchBarIcon {
+    background-color: #DF6D27;
+    width: 268px;
+    height: 168px;
+    border: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.container.quoinsearch {
+	padding: 0px;
+}
+
+.MultiInputBarForm {
+	label {
+		color: white;
+		font-weight: 400;
+		font-size: 16px;
+		margin-bottom: $base__lh;
+	}
+	display: grid !important;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.MultiInputBarForm .form-row {
+    width: 100% !important;
+}
+
+.MultiInputBarForm .form-group {
+    width: 192px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
+
+#OfficeSearch {
+	display: none;
+	margin-top: -60px
+}
+
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    background-color: #CF6227;
+    width: 168px;
+        padding: 15px;
+}
+
+.nav-tabs, .nav-pills {
+    text-align:center;
+    display: block;
+}
+
+.tab-content.search {
+    background-color: #4e4e4ee0;
+    padding: 50px 0px;
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+        margin-top: 40px;
+    margin-left: 0px;
+}
+
+.tabbable-line > .nav-tabs > li {
+   margin: auto 2px;
+}
+
+li.active.tabhead {
+    background-color: #B14025;
+}
+
+li a {
+    color: #fff;
+}
+
+li a.active {
+    color: #fff;
+}
+
+
+.nav-tabs {
+    border-bottom: 0px;
+}
+
+.OfficeSearchBar {
+	max-width: 1290px;
+    margin-left: auto;
+    margin-right: auto;
+	form {
+		input {
+			font-weight: $font-weight--xlight;
+			-webkit-appearance: none;
+		}
+		select {
+			-webkit-appearance: none;
+			border-radius: 0px;
+			border: none;
+			padding-left: $base__lh;
+			padding-right: $base__lh;
+		}
+	}
+}
+.MiniInputBarForm {
+	@include random-min($lg) {
+		display: none;
+	}
+	.input-group {
+		background-color: white;
+		border-radius: $base__lh;
+	}
+	.input-group > input {
+		background-color: transparent;
+	}
+	.input-group > .input-group-append > .RoundedBtn {
+		border-radius: $base__lh;
+		min-width: fit-content;
+		padding: 0;
+	}
+	.btn {
+		min-width: none;
+		width: 48px;
+	}
+}
+.MultiInputBarForm {
+	label {
+		color: white;
+				font-weight: 400;
+		font-size: 16px;
+		margin-bottom: $base__lh;
+	}
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	.form-row {
+		width: 80%;
+	}
+	.form-group {
+		width: 192px;
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,174 @@
+/* ===== Get Started ===== */
+
+.GetStarted {
+	background-color: #d81845;
+	color: white;
+	padding-top: $base__lh*3;
+	padding-bottom: $base__lh*3;
+	@include background-2x( '../images/getstartedpatternbtm', 'png', 806px, 211px, bottom center, repeat-x );
+	@include random-min($ipad) {
+		@include background-2x( '../images/getstartedpatternbtm--dsk', 'png', 1440px, 376px, bottom center, repeat-x );
+	}
+	.container {
+		position: relative;
+	}
+	a.btn {
+		color: $prime-color;
+		background-color: #fff;
+		display: block;
+		margin: 0 auto;
+		max-width: 238px;
+		width: 100%;
+	}
+	h1 {
+		color: white;
+		font-size: 30px;
+		font-weight: $font-weight--xlight;
+		margin-bottom: 72px;
+		line-height: 40px;
+		@include random-max(31.219) {
+			margin-left: $base__lh*3.5;
+			max-width: 230px;
+		}
+		@include random-min(31.219) {
+			max-width:280px;
+			text-align: center;
+		}
+		@include random-min($mdm) {
+			font-size: 50px;
+			line-height: 48px;
+			margin-bottom: $base__lh;
+			max-width:none;
+		}
+		@include random-min($big) {
+			font-size: 57px;
+			line-height: 86px;
+			margin-bottom: 34px;
+		}
+	}
+}
+
+.GetStartedList {
+	font-size: 1.1875rem;//19px
+	font-weight: $font-weight--light;
+	margin-bottom: $base__lh;
+	@include random-min($big) {
+		font-size: 22px;
+	}
+	@include m(Mobile) {
+		@include random-min($lg) {
+			display: none;
+		}
+	}
+	@include m(Desktop) {
+		display: none;
+		@include random-min($lg) {
+			display: flex;
+		}
+	}
+	li.active {
+		font-weight: $font-weight--bold;
+		span {
+			text-decoration: underline;
+		}
+	}
+}
+
+.GetStarted {
+	.MrPointyBox {
+		position: absolute;
+		top: -($base__lh)*3;
+		left: $base__lh/2;
+		@include random-min(31.219) {
+			top: $base__lh*3;
+			left: 6%;
+		}
+		@include random-min($mdm) {
+			top: $base__lh*4;
+			left: 8%;
+		}
+		@include random-min($ipad) {
+			top: $base__lh*3;
+			left: 14%;
+		}
+		@include random-min($lg) {
+			top: 123px;
+			left: 0;
+		}
+		@include random-min(65) {
+			left: -$base__lh;
+		}
+		@include random-min($big) {
+			top: 195px;
+			left: 0;
+		}
+	}
+	.Obj-Fit {
+		@include e(MrPointy) {
+			width: 100%;
+			img {
+				object-fit: cover;
+				object-position: center center;
+				height: $base__lh*10;
+				@include random-min($lg) {
+					height: $base__lh*17;
+				}
+			}
+		}
+	}
+	.GirlfriendBox {
+		display: none;
+		@include random-min(65) {
+			display: block;
+			position: absolute;
+			top: $base__lh*5;
+			right: 0;
+		}
+		@include random-min($big) {
+			top: $base__lh*8;
+		}
+	}
+	.Obj-Fit {
+		@include e(Girlfriend) {
+			width: 100%;
+			img {
+				object-fit: cover;
+				object-position: center center;
+				height: $base__lh*18;
+			}
+		}
+	}
+	.SlideArea {
+		@include random-min($lg) {
+			padding-top: $base__lh*2;
+			padding-bottom: $base__lh*3;
+		}
+		@include random-min($big) {
+			padding-top: $base__lh*4;
+			padding-bottom: $base__lh*2;
+		}
+	}
+}
+
+.GetStarted {
+	.carousel-inner {
+		@include random-min($lg) {
+			max-width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@include random-min(75) {
+			max-width: 800px;
+		}
+	}
+	.carousel-item {
+		@include random-min($lg) {
+			padding-top: $base__lh*2;
+			padding-bottom: $base__lh*3;
+		}
+		@include random-min($big) {
+			padding-top: $base__lh*4;
+			padding-bottom: $base__lh*2;
+		}
+	}
+}

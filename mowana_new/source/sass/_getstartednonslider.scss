@@ -1,0 +1,123 @@
+/* ===== Get Started Non-Slider ===== */
+
+@mixin gSnS {
+	@include random-min(31.219) {
+		padding-left: $base__lh*5;
+	}
+	@include random-min($ipad) {
+		padding-left: $base__lh*7;
+	}
+}
+
+.GetStartedNonSlider {
+	.container {
+		position: relative;
+	}
+	@include e(H1Wrapper) {
+		padding-left: 100px;
+		@include gSnS;
+	}
+	@include e(BtnWrapper) {
+		width: 100%;
+		@include random-min(28.094) {
+			padding-left: 100px;
+			a.btn {
+				margin-left: 0;
+			}
+		}
+		@include gSnS;
+	}
+	h1 {
+		color: white;
+		font-size: 30px;
+		font-weight: $font-weight--xlight;
+		margin-bottom: 72px;
+		line-height: 40px;
+		@include random-max(31.219) {
+			max-width: 230px;
+			margin-left: 0;
+		}
+		@include random-min(31.219) {
+			max-width:none;
+			text-align: left;
+		}
+		@include random-min($mdm) {
+			font-size: 50px;
+			line-height: 48px;
+			margin-bottom: $base__lh;
+			max-width:346px;
+		}
+		@include random-min($ipad) {
+			margin-bottom: $base__lh*2;
+		}
+		@include random-min($lg) {
+			font-size: 57px;
+			line-height: 64px;
+		}
+	}
+}
+
+
+.MrPointyBoxNS {
+	position: absolute;
+	top: -($base__lh)*3;
+	left: $base__lh/2;
+	@include random-min(31.219) {
+		top: -($base__lh)*3;
+		left: 6%;
+	}
+	@include random-min($lg) {
+		top: -48px;
+		left: 0;
+	}
+	@include random-min(65) {
+		left: -$base__lh;
+	}
+	@include random-min($big) {
+		left: 0;
+	}
+}
+.Obj-Fit {
+	@include e(MrPointyGsNs) {
+		width: 100%;
+		img {
+			object-fit: cover;
+			object-position: center center;
+			height: $base__lh*10;
+			@include random-min($lg) {
+				height: $base__lh*16;
+			}
+		}
+	}
+}
+.TheCarNS {
+	display: none;
+	@include random-min($ipad) {
+		display: block;
+		position: absolute;
+		top: $base__lh;
+		right: 0;
+	}
+	@include random-min($lg) {
+		top: -$base__lh;
+	}
+	@include random-min(75) {
+		top: -$base__lh*2;
+	}
+}
+.Obj-Fit {
+	@include e(TheCar) {
+		width: 100%;
+		img {
+			object-fit: cover;
+			object-position: center center;
+			height: $base__lh*10;
+			@include random-min($lg) {
+				height: $base__lh*14;
+			}
+			@include random-min(75) {
+				height: $base__lh*16;
+			}
+		}
+	}
+}

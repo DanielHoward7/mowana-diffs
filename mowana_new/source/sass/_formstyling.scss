@@ -1,0 +1,254 @@
+/* ===== Form Styling ===== */
+.pretty.p-default.p-curve.agreed_checkbox {
+    margin-bottom: 10px;
+    line-height: 13px;
+}
+
+.custom-select-home {
+    border-radius: 0px !important;
+    margin-bottom: 0px;
+    background-color: #ffffff;
+}
+
+.btn {
+	font-weight:400 !important;
+}
+
+.gForm2 {
+    padding: 24px;
+    margin-bottom: 12px;
+}
+
+label.agreed_text {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+
+.plustext {
+	    margin-left: 15px;
+    font-weight: 300 !important;
+}
+.plus-btn {
+	min-width: 50px;
+	max-width: 50px;
+	background-color: $prime-color;
+	border-radius: 0px;
+}
+
+    
+.fax-plus {
+font-style: normal !important;
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: -5px;
+}
+
+.offer_info {
+    box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+}
+
+li.nav_button {
+    width: 204px !important;
+    background-color: #ffffff;
+    height: 75px;
+}
+
+
+.far {
+    font-weight: 400;
+    font-style: normal !important;
+    color: $prime-color;
+}
+
+h1.title_contact {
+    margin-left: 24px;
+    color: $prime-color;
+    font-weight: 400;
+}
+
+.CallUsQuoinCon {
+	font-size: 24px;
+    line-height: 30px;
+    padding-top: 15px;
+    font-weight: 600;
+}
+
+.ContactVdBlock {
+    border: 1px solid #e4e4e4;
+}
+
+.head-info {
+	color: #DF6D27;
+	font-size:24px;
+}
+
+h3.headcontact {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+button.branchactive {
+    width: 100%;
+    height: 48px;
+        border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    background-color: #E0E0E0;
+      border-bottom: 1px solid #cecece;
+}
+
+button.branch{
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid #cecece;
+        border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    background-color: #ffffff;
+}
+
+.custom-select {
+	    border-radius: 0px !important;
+    margin-bottom: 0px;
+    background-color: #ffffff;
+}
+
+@mixin generalForm {
+	padding: $base__lh;
+	margin-bottom: $base__lh;
+}
+
+.FullSearchInput {
+	margin-bottom: $base__lh;
+	.input-group {
+		background-color: white;
+		border-radius: $base__lh;
+	}
+	.input-group > input {
+		background-color: transparent;
+	}
+	.input-group > .input-group-append > .RoundedBtn {
+		border-radius: 0px;
+		min-width: fit-content;
+		padding: 0 16px;
+	}
+	.btn {
+		min-width: none;
+		width: 48px;
+	}
+}
+
+// g = result display per page
+.rdppForm {
+	color: $rslts-grey;
+	font-size: .75rem;//12px
+	line-height: $base__lh;
+	@include e(Select) {
+		display: flex;
+		label {
+			display: block;
+			margin-bottom: 0;
+		}
+		select {
+			background-color: transparent;
+			border: none;
+			font-size: .75rem;//12px
+			font-weight: $font-weight--sbold;
+			height: 24px;
+			line-height: $base__lh;
+			padding: 0 $base__lh 0 6px;
+			width: auto;
+		}
+	}
+}
+
+.SFinder {
+	.gForm {
+		h1 {
+			line-height: $base__lh;
+			margin-bottom: 0;
+		}
+		.FullSearchInput {
+			margin-top: $base__lh;
+		}
+	}
+}
+
+// g = general
+.gForm {
+	@include generalForm;
+	@include m(SftBg) {
+		background-color: #f1f1f1;
+		input.form-control {
+			background-color: #fff;
+		}
+	}
+	@include m(WhiBg) {
+		background-color: #fff;
+	}
+	h1 {
+		color: $heading-dark;
+		font-size: 1.25rem;//20px
+		font-weight: $font-weight--sbold;
+		margin-bottom: $base__lh;
+		line-height: $base__lh;
+	}
+	input {
+		background-color: #fff;
+		-webkit-appearance: none;
+		border-radius: 0px;
+		border: 1px solid #E0E0E0;
+	}
+	select {
+		-webkit-appearance: none;
+		border-radius: $base__lh;
+		border: none;
+		padding-left: $base__lh;
+		padding-right: $base__lh;
+		&.SlctLightBg {
+			background-color: #fff;
+		}
+		&.SlctGreyBg {
+			background-color: #e4e4e4;
+		}
+		&.SlctRedBg {
+			color: white;
+			background-color: $prime-color;
+		}
+	}
+	button {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		@include random-min($sm) {
+			margin-left: 0;
+		}
+	}
+	.btn {
+		width: 100%;
+		max-width: 192px;
+		    border-radius: 0px;
+		@include m(FullWBtn) {
+			max-width: none;
+		}
+	}
+	.custom-checkbox {
+		margin-left: 12px;
+		margin-bottom: $base__lh;
+	}
+}
+
+textarea.form-control {
+    border-radius: 0px;
+    border: 1px solid #E0E0E0;
+}
+
+.Card-Title-Message {
+    font-size: 20px;
+    color: $prime-color;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    font-weight: 400;
+}

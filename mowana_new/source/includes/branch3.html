@@ -1,0 +1,126 @@
+
+<div class="ContactVdBlock">
+<div class="col-md-12">
+      <h1 class="title_contact">Contact Us</h1>
+
+      <div class="gForm gForm--WhiBg">
+        <div class="row column-3">
+          <div class="col-sm-12 col-md-6">
+              <h3 class="headcontact">SUPPORT</h3>
+            <div class="icon-boxes style1">
+              <!-- end icon -->
+              <div class="box-content">
+                <h6 class="CFthin">Quick question?</h6>
+                <h5 class="head-info">Call - 021 551 8059!</h5>
+              </div>
+              <div class="box-content">
+                <h6 class="CFthin">or send us e-mail</h6>
+                <h5 class="head-info">help@mowana.co.za</h5>
+              </div>
+            </div>
+            <!-- icon-box -->
+          </div>
+          <!-- end col -->
+          <div class="col-sm-12 col-md-6">
+              <h3 class="headcontact">HEAD OFFICE</h3>
+             <div class="icon-boxes style1">
+              <!-- end icon -->
+              <div class="box-content">
+                <h6 class="CFthin">13 Lourensford Road<br>
+The West Peak, 1st Floor,<br>
+Somerset West<br>
+7130<br>
+South Africa<br>
+Branch3</h6>
+
+  <div class="CallUs__CTA" style="padding-top: 12px">
+              <p><i class="fas fa-2x fa-phone fa-flip-horizontal"></i> Call us on</p>
+            </div><!-- /CallUs__CTA -->
+            <div class="CallUsQuoinCon">
+              +27 21 345 765
+            </div><!-- /CallUs__Number -->
+              </div>
+            </div>
+            <!-- icon-box -->
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+</div>
+
+        <div class="row">
+          <div class="col-sm-12 gForm">
+
+            <div class="form-group">
+              <input
+                v-validate="'required'"
+                v-model="name"
+                data-vv-as="Name"
+                name="name"
+                type="text"
+                placeholder="Name"
+                class="form-control input-lg">
+            </div>
+            <div class="form-group">
+              <input
+                v-validate="'required|email'"
+                v-model="email"
+                data-vv-as="E-Mail"
+                name="email"
+                type="text"
+                placeholder="E-Mail"
+                class="form-control input-lg">
+            </div>
+            <div class="form-group">
+              <textarea
+                v-validate="'required'"
+                v-model="message"
+                data-vv-as="Message"
+                rows="6"
+                name="message"
+                placeholder="Your Message"
+                class="form-control input-lg"></textarea>
+            </div>
+
+            <div class="form-group">
+
+              <div class="pretty p-default p-curve">
+                <input type="checkbox" />
+                <div class="state p-warning-o">
+                    <label>I’m not a robot</label>
+                </div>
+            </div>
+
+          </div>
+
+            <div class="form-group">
+              <vue-recaptcha
+                ref="recaptcha"
+                :sitekey="sitekey"
+                @verify="onVerify"
+                @expired="onExpired">
+                <button
+                  :disabled="status==='submitting'"
+                  class="btn btn-primary"
+                  @click="send">Send</button>
+              </vue-recaptcha>
+
+            </div>
+          </div>
+          <!-- end col -->
+</div>
+</div>
+  <div class="row">
+
+		<div class="col-lg-12">
+
+<div class="col-md-12 float-right">
+	<div class="map-responsive" style="margin-bottom: 24px">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d619.6333365984177!2d18.849477878976224!3d-34.07913286009561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcdcac6ff725339%3A0x5c1b0b67063922af!2sCheymaxim+Creative!5e0!3m2!1sen!2sza!4v1540202563722" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>

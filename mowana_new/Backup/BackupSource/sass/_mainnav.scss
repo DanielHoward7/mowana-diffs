@@ -1,0 +1,158 @@
+/* ===== MainNav ===== */
+
+img.headerimg {
+    width: 210px;
+    height: 50px;
+}
+
+
+@media (max-width: 1399px) and (min-width: 992px) {
+img.headerimg {
+    width: 155px;
+    height: 40px;
+}
+
+
+	}
+
+.Main {
+	@include e(TopNav) {
+		background-color: #373236;
+		box-shadow: 0px 0px 40px -6px rgba(0,0,0,0.45);
+		@include random-min($lg) {
+			.navbar-nav a {
+				padding-top: $base__lh;
+				padding-bottom: $base__lh;
+			}
+		}
+	}
+}
+
+.ml-auto, .mx-auto {
+    margin-left: 60px !important;
+}
+
+@media (max-width: $breakpoint-laptop) {
+  .ml-auto, .mx-auto {
+    margin-left: auto !important;
+}
+}
+
+.NavBarNav {
+	@include random-min(61.969) {
+		background-color: #373236;
+	}
+	.nav-item {
+		a.nav-link {
+			@include random-min(61.969) {
+				font-size: .875rem;
+				padding: $base__lh*2 $base__lh;
+			}
+			@include random-min($big) {
+				font-size: 1rem;
+
+			}
+		}
+
+	}
+	li.nav-item.nav-item--Home.active {
+		@include random-min(61.969) {
+			font-weight: $font-weight--sbold;
+			& > a {
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+.NavBarTools {
+	background-color: #373236;
+	@include random-min($lg) {
+		margin-left: 0px;
+	}
+	@include random-min(75) {
+		margin-left: 0px;
+	}
+	.nav-item {
+		@include random-max($lg) {
+			a.nav-link {
+				img {
+					display: none;
+				}
+			}
+		}
+		@include random-min($lg) {
+			span {
+				padding-right: 50px;
+			}
+			a.nav-link {
+				padding-left: 0;
+				padding-right:5px;
+			}
+		}
+	}
+}
+// scrollbar styling
+.NavBarTools {
+	::-webkit-scrollbar-track {
+		background: #e4e4e4;
+	}
+	::-webkit-scrollbar {
+		-webkit-appearance: none;
+		width: 7px;
+	}
+	::-webkit-scrollbar-thumb {
+		border-radius: 4px;
+		background-color: darken(rgba(211, 22, 61, 1), 5%);
+		-webkit-box-shadow: 0 0 1px rgba(224, 224, 224, 1);
+	}
+}
+
+.Obj-Fit {
+	@include e(NavLogo) {
+		width: 100%;
+		img {
+			object-fit: contain;
+			object-position: top center;
+			height: $base__lh*2;
+			@include random-min($big) {
+				height: $base__lh*2;
+			}
+		}
+	}
+}
+
+@media (max-width: 1025px) and (min-width: 912px) {
+
+	li.nav-item.nav-item--Phone {
+    font-size: 12px;
+}
+
+.NavBarNav {
+	@include random-min($lg) {
+		background-color: #373236;
+	}
+	.nav-item {
+		a.nav-link {
+			@include random-min($lg) {
+				font-size: 12px;
+				padding: 35px 18px;
+			}
+			@include random-min($big) {
+				font-size: 1rem;
+
+			}
+		}
+
+	}
+	li.nav-item.nav-item--Home.active {
+		@include random-min($lg) {
+			font-weight: $font-weight--sbold;
+			& > a {
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+}
