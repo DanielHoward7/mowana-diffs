@@ -1,0 +1,93 @@
+/* ===== mixins ===== */
+
+// BEM selectors ===================
+
+@mixin e($name) {
+	@at-root &__#{$name} {
+		@content
+	}
+}
+@mixin m($name) {
+	@at-root &--#{$name} {
+		@content
+	}
+}
+
+// Media Queries ===================
+
+$tablet-width: 48em;
+$desktop-width: 73.143em;
+
+@mixin random-max($wmax) {
+  @media (max-width: #{$wmax}em) {
+    @content;
+  }
+}
+@mixin random-min($wmin) {
+  @media (min-width: #{$wmin}em) {
+    @content;
+  }
+}
+@mixin random-from-to($wfrom,$wto) {
+  @media (min-width: #{$wfrom}em) and (max-width: #{$wto}em) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$desktop-width + 0.071em}) {
+    @content;
+  }
+}
+
+// ==================================
+
+@function top-shadow($depth) {
+  $primary-offset: nth(1.5 3 10 14 19, $depth) * 1px;
+  $blur: nth(1.5 3 10 14 19, $depth) * 4px;
+  $color: rgba(black, nth(.12 .16 .19 .25 .30, $depth));
+
+  @return 0 $primary-offset $blur $color;
+}
+
+@function bottom-shadow($depth) {
+  $primary-offset: nth(1.5 3 6 10 15, $depth) * 1px;
+  $blur: nth(1 3 3 5 6, $depth) * 4px;
+  $color: rgba(black, nth(.24 .23 .23 .22 .22, $depth));
+
+  @return 0 $primary-offset $blur $color;
+}
+
+@mixin card($depth) {
+  @if $depth < 1 {
+    box-shadow: none;
+  } @else if $depth > 5 {
+    @warn "Invalid $depth `#{$depth}` for mixin `card`.";
+  } @else {
+    box-shadow: bottom-shadow($depth), top-shadow($depth);
+  }
+}
+
+// Retina Queries ===================
+
+@mixin background-2x($path, $ext: "png", $w: auto, $h: auto, $pos: left top, $repeat: no-repeat) {
+
+  $at1x_path: "#{$path}.#{$ext}";
+  $at2x_path: "#{$path}@2x.#{$ext}";
+
+  background-image: url("#{$at1x_path}");
+  background-size: $w $h;
+  background-position: $pos;
+  background-repeat: $repeat;
+
+  @media all and (-webkit-min-device-pixel-ratio : 1.5),
+  all and (-o-min-device-pixel-ratio: 3/2),
+  all and (min--moz-device-pixel-ratio: 1.5),
+  all and (min-device-pixel-ratio: 1.5) {
+    background-image: url("#{$at2x_path}");
+  }
+}

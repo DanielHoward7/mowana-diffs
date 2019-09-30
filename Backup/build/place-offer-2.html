@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head class="no-js">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="apple-touch-icon-precomposed.png" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="js/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+
+<title>Mowana Online | Place Offer Page 1</title>
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+		<section class="DetailsPage">
+			<section class="Main__TopNav">
+				<nav class="navbar navbar-expand-lg navbar-dark">
+					<div class="container">
+						<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#auctionNavbarToggler" aria-controls="auctionNavbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<a href="/">
+								<img class="headerimg" src="images/navlogo.png" alt="Auction Online logo" width="210" />
+						</a>
+						<div class="collapse navbar-collapse" id="auctionNavbarToggler">
+							<ul class="navbar-nav ml-auto NavBarNav">
+								<li class="nav-item nav-item--Home">
+									<a class="nav-link" href="#"><span>HOME</span></a>
+								</li>
+								<li class="nav-item nav-item--Sale">
+									<a class="nav-link" href="#"><span>FOR SALE</span></a>
+								</li>
+								<li class="nav-item nav-item--ToLet">
+									<a class="nav-link" href="#"><span>TO LET</span></a>
+								</li>
+									<li class="nav-item nav-item--Tools">
+									<a class="nav-link" href="#"><span>TOOLS</span></a>
+								</li>
+									<li class="nav-item nav-item--Login">
+									<a class="nav-link" href="#"><span>LOGIN/REGISTER</span></a>
+								</li>
+							</ul>
+							<ul class="navbar-nav NavBarTools">
+								<li class="nav-item nav-item--Phone">
+									<a class="nav-link" href="#">
+										<i class="fas fa-2x fa-phone fa-flip-horizontal"></i>
+										<span><b>+27 21 1234 5678</b></span>
+									</a>
+								</li>
+								<li class="nav-item nav-item--Facebook">
+									<a class="nav-link" href="#">
+										<i class="fab fa-2x fa-facebook-square"></i>
+									</a>
+								</li>
+								<li class="nav-item nav-item--Twitter">
+									<a class="nav-link" href="#">
+										<i class="fab fa-2x  fa-twitter-square"></i>
+									</a>
+								</li>
+								<li class="nav-item nav-item--Google">
+									<a class="nav-link" href="#">
+										<i class="fab fa-2x  fa-google-plus-square"></i>
+									</a>
+									<li class="nav-item nav-item--Linkedin">
+									<a class="nav-link" href="#">
+									<i class="fab fa-2x  fa-linkedin"></i>
+								</a>
+			
+								</li>
+							</ul>
+						</div>
+					</div><!-- /container -->
+				</nav>
+			</section><!-- /TopNav -->
+						<section class="HeaderbannerBox justify-content-center align-items-center">
+						<div class="container d-md-flex justify-content-md-around h-100">
+									<div class="text-center HeaderMain2">
+										<div class="row h-100">
+											<div class="col-lg-12 my-auto-top">
+										<h1 class="HomeHead2">FOR EXPERT AND<br>
+						PERSONAL PROPERTY<br>
+						SOLUTIONS</h1>
+						</div>
+								</div>
+								
+									</div>
+						
+								</div>
+						</section>
+
+			<div class="container" style="margin-top: 48px; margin-bottom: 48px;">
+	<a href="#" class="BackLink">&lt; Back</a>
+
+				<div class="DetailsPage__Content">
+						<div class="container">
+
+							<div class="Place-Offer-Head">
+										Offer Details
+									</div>
+
+
+<section>
+
+        <div class="row">
+
+        	<div class="col-sm-12 col-md-12 col-lg-6">
+
+        			<div class="Card-Title-Message-Reg">
+										Rental
+									</div><!-- /Card-Title -->
+
+          <div class="col-sm-12 YDgForm new1 placeoffertwo">
+
+          	<div class="row">
+
+              <!-- Block-Row -->
+          		<div class="col-sm-12">
+
+          			<label for="inputBrand">Gross Rental per m2</label>
+          			 <input
+                		v-validate="'required'"
+                		v-model="grossrental"
+               			data-vv-as="Gross Rental"
+                		name="grossrental"
+                		type="text"
+                		placeholder=""
+                		class="form-control input-lg placeoffer">
+
+                	</div>
+                  <!-- /Block-Row -->
+
+
+                  <!-- Block-Row -->
+
+                	<div class="col-sm-12 col-md-4">
+
+                		<label for="inputBrand">Net Rental per m2</label>
+
+                		                	<input
+                		v-validate="'required'"
+                		v-model="netrental"
+               			data-vv-as="Net Rental"
+                		name="netrental"
+                		type="text"
+                		placeholder=""
+                		class="form-control input-lg placeoffer">
+
+                	</div>
+
+                	<div class="col-sm-12 col-md-4">
+
+                		<label for="inputBrand">GLA</label>
+
+                		          			 <input
+                		v-validate="'required'"
+                		v-model="gla"
+               			data-vv-as="GLA"
+                		name="gla"
+                		type="text"
+                		placeholder=""
+                		class="form-control input-lg placeoffer">
+
+                	</div>
+
+                	<div class="col-sm-12 col-md-4">
+
+                		<label for="inputBrand">Escalation %</label>
+
+                		          			 <input
+                		v-validate="'required'"
+                		v-model="escalation"
+               			data-vv-as="Escalation"
+                		name="escalation"
+                		type="text"
+                		placeholder=""
+                		class="form-control input-lg placeoffer">
+
+                	</div>
+                  <!-- /Block-Row -->
+
+                  <!-- Block-Row -->
+                	<div class="col-sm-12 col-md-8">
+
+                		<label for="inputBrand">Ops Cost per m2</label>
+
+                		          			 <input
+                		v-validate="'required'"
+                		v-model="opscost"
+               			data-vv-as="Ops Cost"
+                		name="opscost"
+                		type="text"
+                		placeholder=""
+                		class="form-control input-lg placeoffer">
+
+                	</div>
+
+                	<div class="col-sm-12 col-md-4">
+
+                		<label for="inputBrand">Escalation %</label>
+
+                		          			  <input
+                		v-validate="'required'"
+                		v-model="escalation"
+               			data-vv-as="Escalation"
+                		name="escalation"
+                		type="text"
+                		placeholder=""
+                		class="form-control input-lg placeoffer">
+
+                	</div>
+                  <!-- /Block-Row -->
+
+                  <!-- Block-Row -->
+
+                		<div class="col-sm-12 col-md-4">
+
+                		<label for="inputBrand">Balcony Rate per m2</label>
+
+                		                	<input
+                		v-validate="'required'"
+                		v-model="balcony"
+               			data-vv-as="Balcony"
+                		name="balcony"
+                		type="text"
+                		placeholder=""
+                		class="form-control input-lg placeoffer">
+
+                	</div>
+
+                	<div class="col-sm-12 col-md-4">
+
+                		<label for="inputBrand">GLA</label>
+
+                		          			 <input
+                		v-validate="'required'"
+                		v-model="gla"
+               			data-vv-as="GLA"
+                		name="gla"
+                		type="text"
+                		placeholder=""
+                		class="form-control input-lg placeoffer">
+
+                	</div>
+
+                	<div class="col-sm-12 col-md-4">
+
+                		<label for="inputBrand">Escalation %</label>
+
+                		          			 <input
+                		v-validate="'required'"
+                		v-model="escalation"
+               			data-vv-as="Escalation"
+                		name="escalation"
+                		type="text"
+                		placeholder=""
+                		class="form-control input-lg placeoffer">
+
+                	</div>
+                  <!-- /Block-Row -->
+
+                  <!-- Block-Row -->
+
+                	<div class="col-sm-12">
+
+          			<label for="inputBrand">Rates</label>
+          			 <input
+                		v-validate="'required'"
+                		v-model="rates"
+               			data-vv-as="Rates"
+                		name="rates"
+                		type="text"
+                		placeholder=""
+                		class="form-control input-lg placeoffer">
+
+                	</div>
+                  <!-- /Block-Row -->
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="col-sm-12 col-md-12 col-lg-6 placeoffertwo">
+
+        			<div class="Card-Title-Message-Reg">
+										Tenant Installation
+									</div><!-- /Card-Title -->
+
+          <div class="col-sm-12 YDgForm new1">
+
+          	<div class="row">
+
+              <!-- Block-Row -->
+          		<div class="col-sm-12">
+
+          			<label for="inputBrand">Rate per m2</label>
+          			 <input
+                		v-validate="'required'"
+                		v-model="rateper"
+               			data-vv-as="Rate Per"
+                		name="rateper"
+                		type="text"
+                		placeholder=""
+                		class="form-control input-lg placeoffer">
+
+                	</div>
+                  <!-- /Block-Row -->
+
+                  <!-- Block-Row -->
+
+                	<div class="col-sm-12">
+
+          			<label for="inputBrand">Total</label>
+          			 <input
+                		v-validate="'required'"
+                		v-model="total"
+               			data-vv-as="Total"
+                		name="total"
+                		type="text"
+                		placeholder=""
+                		class="form-control input-lg placeoffer">
+
+                	</div>
+                  <!-- /Block-Row -->
+
+        			<div class="Card-Title-Message-Reg deposit">
+										Deposit
+									</div><!-- /Card-Title -->
+
+                  <!-- Block-Row -->
+
+          <div class="col-sm-12 ODgForm new1">
+
+          	<p class="deposittext">
+          		<strong>Deposit:</strong> The standard requirement is 3 times the last month’s Total Rental Subject to credit check results.
+          	</p>
+
+            <label for="inputBrand">Type:</label>
+				<select id="inputModel" class="form-control custom-select ">
+					<option selected>Deposit</option>
+					<option>...</option>
+				</select>
+            
+          </div>
+          <!-- /Block-Row -->
+
+						</div>
+
+					</div>
+
+				</div>
+            
+          </div>
+         <!-- end col -->  
+
+</section>
+
+<section>
+
+        <div class="row">
+
+          <div class="col-sm-12 col-md-12 col-lg-6 placeoffertwo">
+
+              <div class="Card-Title-Message-Reg">
+                    Parking
+                  </div><!-- /Card-Title -->
+
+          <div class="col-sm-12 YDgForm new1">
+
+            <div class="row">
+
+                  <div class="col-sm-12 col-md-8">
+
+                    <label for="inputBrand">Basement Bays Required</label>
+
+                                     <input
+                    v-validate="'required'"
+                    v-model="basebay"
+                    data-vv-as="Basement Bays"
+                    name="basebay"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12 col-md-4">
+
+                    <label for="inputBrand">Rate</label>
+
+                                      <input
+                    v-validate="'required'"
+                    v-model="baserate"
+                    data-vv-as="Basement Rate"
+                    name="baserate"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12 col-md-8">
+
+                    <label for="inputBrand">Covered Bays Required</label>
+
+                                     <input
+                    v-validate="'required'"
+                    v-model="coverbay"
+                    data-vv-as="Covered Bays"
+                    name="coverbay"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12 col-md-4">
+
+                    <label for="inputBrand">Rate</label>
+
+                                      <input
+                    v-validate="'required'"
+                    v-model="baserate"
+                    data-vv-as="Basement Rate"
+                    name="baserate"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12 col-md-8">
+
+                    <label for="inputBrand">Open Bays Required</label>
+
+                                     <input
+                    v-validate="'required'"
+                    v-model="openbay"
+                    data-vv-as="Open Bays"
+                    name="openbay"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12 col-md-4">
+
+                    <label for="inputBrand">Rate</label>
+
+                                      <input
+                    v-validate="'required'"
+                    v-model="baserate"
+                    data-vv-as="Basement Rate"
+                    name="baserate"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12 col-md-8">
+
+                    <label for="inputBrand">Tandem Bays Required</label>
+
+                                     <input
+                    v-validate="'required'"
+                    v-model="tandembay"
+                    data-vv-as="Tandem Bays"
+                    name="tandembay"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12 col-md-4">
+
+                    <label for="inputBrand">Rate</label>
+
+                                      <input
+                    v-validate="'required'"
+                    v-model="baserate"
+                    data-vv-as="Basement Rate"
+                    name="baserate"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12 col-md-8">
+
+                    <label for="inputBrand">Shadecloth Bays Required</label>
+
+                                     <input
+                    v-validate="'required'"
+                    v-model="shadebay"
+                    data-vv-as="Shadecloth Bays"
+                    name="shadebay"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12 col-md-4">
+
+                    <label for="inputBrand">Rate</label>
+
+                                      <input
+                    v-validate="'required'"
+                    v-model="baserate"
+                    data-vv-as="Basement Rate"
+                    name="baserate"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-6 placeoffertwo">
+
+              <div class="Card-Title-Message-Reg">
+                    Store Rooms
+                  </div><!-- /Card-Title -->
+
+          <div class="col-sm-12 YDgForm new1">
+
+            <div class="row">
+              <div class="col-sm-12 col-md-8">
+
+                    <label for="inputBrand">Size (m2)</label>
+
+                                     <input
+                    v-validate="'required'"
+                    v-model="size"
+                    data-vv-as="Size"
+                    name="size"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12 col-md-4">
+
+                    <label for="inputBrand">Rate/m2</label>
+
+                                      <input
+                    v-validate="'required'"
+                    v-model="ratem2"
+                    data-vv-as="Rate m2"
+                    name="ratem2"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+              <div class="Card-Title-Message-Reg deposit">
+                    Dates
+                  </div><!-- /Card-Title -->
+
+          <div class="col-sm-12 DateForm new1">
+
+            <div class="row">
+
+                        <div class="col-sm-12 col-md-6">
+
+                    <label for="inputBrand">Lease Period</label>
+
+                            <select id="inputModel" class="form-control custom-select ">
+          <option selected>36</option>
+          <option>...</option>
+        </select>
+
+                  </div>
+
+                  <div class="col-sm-12 col-md-6">
+
+                    <label for="inputBrand">Rental Commence Date</label>
+
+                 
+    <input type="text" id="datepicker" class="form-control custom-select ">
+  
+</div>
+
+                  </div>
+
+                </div>
+            
+          </div>
+
+                        <div class="Card-Title-Message-Reg deposit">
+                    Extra
+                  </div><!-- /Card-Title -->
+
+          <div class="col-sm-12 ExtraForm new1">
+
+            <div class="row">
+
+                        <div class="col-sm-12">
+
+                                     <input
+                    v-validate="'required'"
+                    v-model="note"
+                    data-vv-as="Note"
+                    name="not"
+                    type="text"
+                    placeholder="Notes"
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+                </div>
+            
+          </div>
+
+            </div>
+
+        </div>
+            
+          </div>
+         <!-- end col -->  
+
+</section>
+
+<section class="placeoffertwo">
+
+        <div class="row">
+
+          <div class="col-sm-12">
+
+              <div class="Card-Title-Message-Reg">
+                    Special Conditions
+                  </div><!-- /Card-Title -->
+
+          <div class="col-sm-12 YDgForm new1">
+
+            <div class="row">
+
+                  <div class="col-sm-12">
+
+                                     <textarea
+                    v-validate="'required'"
+                    v-model="specialconditions"
+                    data-vv-as="Special Conditions"
+                    name="specialconditions"
+                    type="text"
+                    placeholder="Test Offer"
+                    class="form-control input-lg placeoffer"></textarea>
+
+                  </div
+
+            </div>
+
+          </div>
+
+        </div>
+            
+          </div>
+         <!-- end col -->  
+
+</section>
+
+<section>
+
+        <div class="row">
+
+          <div class="col-sm-12 placeoffertwo">
+
+              <div class="Card-Title-Message-Reg">
+                    Additional Info
+                  </div><!-- /Card-Title -->
+
+          <div class="col-sm-12 YDgForm new1">
+
+            <div class="row">
+
+                  <div class="col-sm-12">
+
+                    <label for="inputBrand">Use of Premises</label>
+
+                                     <textarea
+                    v-validate="'required'"
+                    v-model="additionalinfo"
+                    data-vv-as="Additional Info"
+                    name="additionalinfo"
+                    type="text"
+                    placeholder="Administrative Office"
+                    class="form-control input-lg placeoffer"></textarea>
+
+                  </div
+
+            </div>
+
+          </div>
+
+        </div>
+            
+          </div>
+         <!-- end col -->  
+
+</section>
+
+<section>
+
+        <div class="row">
+
+          <div class="col-sm-12 col-md-12 col-lg-6 placeoffertwo">
+
+              <div class="Card-Title-Message-Reg">
+                    Proxy Details - FICA/Credit Check
+                  </div><!-- /Card-Title -->
+
+          <div class="col-sm-12 YDgForm new1">
+
+            <div class="row">
+
+                  <div class="col-sm-12">
+
+                    <label for="inputBrand">First Name</label>
+
+                                     <input
+                    v-validate="'required'"
+                    v-model="fname"
+                    data-vv-as="First Name"
+                    name="fname"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12">
+
+                    <label for="inputBrand">Lastname</label>
+
+                                     <input
+                    v-validate="'required'"
+                    v-model="lname"
+                    data-vv-as="Lastname"
+                    name="lname"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12">
+
+                    <label for="inputBrand">ID Number</label>
+
+                                      <input
+                    v-validate="'required'"
+                    v-model="idnumber"
+                    data-vv-as="ID Number"
+                    name="idnumber"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12">
+
+                    <label for="inputBrand">Designation</label>
+
+                                     <input
+                    v-validate="'required'"
+                    v-model="designation"
+                    data-vv-as="Designation"
+                    name="designation"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12">
+
+                    <label for="inputBrand">Phone Number</label>
+
+                                      <input
+                    v-validate="'required'"
+                    v-model="phonenumber"
+                    data-vv-as="Phone Number"
+                    name="phonenumber"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12">
+
+                    <label for="inputBrand">Email</label>
+
+                                     <input
+                    v-validate="'required'"
+                    v-model="email"
+                    data-vv-as="Email"
+                    name="email"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-6 placeoffertwo">
+
+              <div class="Card-Title-Message-Reg">
+                    Proxy Details - Authorised Signatory
+                  </div><!-- /Card-Title -->
+
+          <div class="col-sm-12 YDgForm new1">
+
+            <div class="row">
+
+               <div class="col-sm-12">
+
+                    <label for="inputBrand">First Name</label>
+
+                                     <input
+                    v-validate="'required'"
+                    v-model="fname"
+                    data-vv-as="First Name"
+                    name="fname"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12">
+
+                    <label for="inputBrand">Lastname</label>
+
+                                     <input
+                    v-validate="'required'"
+                    v-model="lname"
+                    data-vv-as="Lastname"
+                    name="lname"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12">
+
+                    <label for="inputBrand">ID Number</label>
+
+                                      <input
+                    v-validate="'required'"
+                    v-model="idnumber"
+                    data-vv-as="ID Number"
+                    name="idnumber"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12">
+
+                    <label for="inputBrand">Designation</label>
+
+                                     <input
+                    v-validate="'required'"
+                    v-model="designation"
+                    data-vv-as="Designation"
+                    name="designation"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12">
+
+                    <label for="inputBrand">Phone Number</label>
+
+                                      <input
+                    v-validate="'required'"
+                    v-model="phonenumber"
+                    data-vv-as="Phone Number"
+                    name="phonenumber"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+
+                  <div class="col-sm-12">
+
+                    <label for="inputBrand">Email</label>
+
+                                     <input
+                    v-validate="'required'"
+                    v-model="email"
+                    data-vv-as="Email"
+                    name="email"
+                    type="text"
+                    placeholder=""
+                    class="form-control input-lg placeoffer">
+
+                  </div>
+             
+
+            </div>
+
+        </div>
+            
+          </div>
+         <!-- end col --> 
+
+
+                                            <button
+                  :disabled="status==='submitting'"
+                  class="btn btn-primary Submitbtn"
+                  @click="send">Place Offer</button> 
+
+</section>
+
+
+</div>
+				</div><!-- /DetailsPage__Content -->
+
+
+
+			</div><!-- /container -->
+		</section><!-- /DetailsPage -->
+
+			<section id="RecentlyAddedProp">
+				<div class="RecentlyAdded FindResultOutput">
+					<div class="container">
+							<div class="row">
+								<div class="col-lg-6 col-xl-4" style="display: inline-table;">
+									<div class="row Card-Head">
+									
+																	<div class="col-sm-6 col-md-6 col-lg-6">
+																		<div class="Card-Title">
+																			FOR SALE
+																		</div><!-- /Card-Title -->
+																	</div>
+									
+																	<div class="col-sm-6 col-md-6 col-lg-6">
+																		<div class="Card-TimerBox">
+																			<i class="far fa-clock"></i>&nbsp;<b>15</b> | 23 | 55 | 08
+																		</div><!-- /Card-TimerBox -->
+																	</div>
+																</div>
+									
+																<div class="card">
+									
+																	<div class="Obj-Fit__TodaysFeaturedProperty">
+																		<img class="card-img-top" src="images/officephoto1.png" alt="Property Description">
+																	</div><!-- /Obj-Fit__TodaysFeaturedProperty -->
+									
+																	<div class="Card-Prop-Type">
+																		<label class="Title-Label">Industrial</label>
+																	</div>
+									
+																	<div class="Featured-Details">
+																		<a data-v-392dc281="" onclick="return false" title="Add to your watchlist" class="AddToMyWatchlist AddedToWatchlist"><span data-v-392dc281="" class="sr-only">Add to my watchlist</span></a>
+																		<div class="col-lg-12 float-left" style="padding-left: 0px">
+																			<ul>
+																				<li style="font-weight: bold;">Property Name</li>
+																				<li>Location: Epping 1 Industrial</li>
+																				<li>Size: 15 000/m2</li>
+																			</ul>
+																		</div>
+																	</div>
+																		<label class="Cost-Label">Price: R3 500 000</label>
+									
+																	<div class="Card-More-Btn">
+																		<button class="quoinbutton hvr-grow">MORE INFO</button>
+																	</div>
+									</div>
+								</div><!-- /col -->
+								<div class="col-lg-6 col-xl-4" style="display: inline-table;">
+									<div class="row Card-Head">
+									
+																	<div class="col-sm-6 col-md-6 col-lg-6">
+																		<div class="Card-Title">
+																			FOR SALE
+																		</div><!-- /Card-Title -->
+																	</div>
+									
+																	<div class="col-sm-6 col-md-6 col-lg-6">
+																		<div class="Card-TimerBox">
+																			<i class="far fa-clock"></i>&nbsp;<b>15</b> | 23 | 55 | 08
+																		</div><!-- /Card-TimerBox -->
+																	</div>
+																</div>
+									
+																<div class="card">
+									
+																	<div class="Obj-Fit__TodaysFeaturedProperty">
+																		<img class="card-img-top" src="images/officephoto1.png" alt="Property Description">
+																	</div><!-- /Obj-Fit__TodaysFeaturedProperty -->
+									
+																	<div class="Card-Prop-Type">
+																		<label class="Title-Label">Industrial</label>
+																	</div>
+									
+																	<div class="Featured-Details">
+																		<a data-v-392dc281="" onclick="return false" title="Add to your watchlist" class="AddToMyWatchlist AddedToWatchlist"><span data-v-392dc281="" class="sr-only">Add to my watchlist</span></a>
+																		<div class="col-lg-12 float-left" style="padding-left: 0px">
+																			<ul>
+																				<li style="font-weight: bold;">Property Name</li>
+																				<li>Location: Epping 1 Industrial</li>
+																				<li>Size: 15 000/m2</li>
+																			</ul>
+																		</div>
+																	</div>
+																		<label class="Cost-Label">Price: R3 500 000</label>
+									
+																	<div class="Card-More-Btn">
+																		<button class="quoinbutton hvr-grow">MORE INFO</button>
+																	</div>
+									</div>
+								</div><!-- /col -->
+								<div class="col-lg-6 col-xl-4" style="display: inline-table;">
+									<div class="row Card-Head">
+									
+																	<div class="col-sm-6 col-md-6 col-lg-6">
+																		<div class="Card-Title">
+																			FOR SALE
+																		</div><!-- /Card-Title -->
+																	</div>
+									
+																	<div class="col-sm-6 col-md-6 col-lg-6">
+																		<div class="Card-TimerBox">
+																			<i class="far fa-clock"></i>&nbsp;<b>15</b> | 23 | 55 | 08
+																		</div><!-- /Card-TimerBox -->
+																	</div>
+																</div>
+									
+																<div class="card">
+									
+																	<div class="Obj-Fit__TodaysFeaturedProperty">
+																		<img class="card-img-top" src="images/officephoto1.png" alt="Property Description">
+																	</div><!-- /Obj-Fit__TodaysFeaturedProperty -->
+									
+																	<div class="Card-Prop-Type">
+																		<label class="Title-Label">Industrial</label>
+																	</div>
+									
+																	<div class="Featured-Details">
+																		<a data-v-392dc281="" onclick="return false" title="Add to your watchlist" class="AddToMyWatchlist AddedToWatchlist"><span data-v-392dc281="" class="sr-only">Add to my watchlist</span></a>
+																		<div class="col-lg-12 float-left" style="padding-left: 0px">
+																			<ul>
+																				<li style="font-weight: bold;">Property Name</li>
+																				<li>Location: Epping 1 Industrial</li>
+																				<li>Size: 15 000/m2</li>
+																			</ul>
+																		</div>
+																	</div>
+																		<label class="Cost-Label">Price: R3 500 000</label>
+									
+																	<div class="Card-More-Btn">
+																		<button class="quoinbutton hvr-grow">MORE INFO</button>
+																	</div>
+									</div>
+								</div><!-- /col -->
+							</div>
+						</div>
+					</div>
+					</section>
+
+
+		
+		
+		
+						<section id="WelcomeSection" style="background-color: #F9F9F9">
+					<div class="text-center">
+		    					<p class="WelcomeText2">Quick Links</p>
+		    				</div>
+					<div class="container">
+		    			<div class="row">
+								<div class="col-sm-6 col-md-6 col-lg-3">
+									<img class="text-center hvr-grow img-responsive img-center bg_shadow" src="images/find-proporty.png">
+									<p class="text-center col-mt-1" style="font-weight: 400">FIND YOUR<br> PROPERTY</p>
+								</div>
+								<div class="col-sm-6  col-md-6 col-lg-3">
+									<img class="text-center hvr-grow img-responsive img-center bg_shadow" src="images/view-proporty.png">
+									<p class="text-center col-mt-1" style="font-weight: 400">VIEW YOUR<br> APARTMENTS</p>
+								</div>
+								<div class="col-sm-6  col-md-6 col-lg-3">
+									<img class="text-center hvr-grow img-responsive img-center bg_shadow" src="images/locations-proporty.png">
+									<p class="text-center col-mt-1" style="font-weight: 400">VARIOUS<br> LOCATIONS</p>
+								</div>
+								<div class=" col-sm-6 col-md-6 col-lg-3">
+									<img class="text-center hvr-grow img-responsive img-center bg_shadow" src="images/calculator-proporty.png">
+									<p class="text-center col-mt-1" style="font-weight: 400">PROPERTY<br> CALCULATORS</p>
+								</div>
+						</div>
+					</div>
+				</section>
+		
+		
+		<!--		<section id="HowItWorksSection" style="background-color: #31383E">
+					<div class="container" style="max-width: 1920px; padding: 0px">
+		    			<div class="row" style="margin: 0px;">
+							<div class="col-md-6 howitworksimage">
+								
+							</div>
+							<div class="col-md-6 howitworksblock">
+								<p class="howitworksheading">How it Works</p>
+								<p class="howitworkssubheading">Find your next property<br>quick and easy!</p>
+								<p class="howitworkstext">Pearl Valley is well established 5 star residential and leisure resort midway between Franschhoek and Paarl, roughly 25 minutes drive from Stellenbosch and 50 minutes from Cape Town. It boasts the Number 5 rated golf course of SA and has international recognition for this Jack Nicklaus course. The estate offers a variety of different property propositions depending on one’s needs and lifestyle.</p>
+								<button class="quoinbutton">READ MORE</button>
+							</div>
+						</div>
+					</div>
+				</section> -->
+		<footer class="MainFooter">
+			<div class="container">
+				<div class="JamiesBox">
+				
+					</div><!-- /MrPointyBox -->
+				<div class="FooterInnerBox">
+					<div class="row">
+						<div class="col-md-6 col-lg-3">
+							<img class="img-responsive" src="images/footerlogo.png" style="padding-bottom: 25px" alt="Quoin Online logo" />
+							<p>We know the difference is in the details and that’s why our service stands out based on it’s simplicity, effectiveness,  transparency and quality.</p>
+							<form class="SmallInputForm">
+								<div class="form-row">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="SUBSCRIBE TO NEWSLETTER" aria-label="Subscribe to Newsletter" aria-describedby="Search">
+										<div class="input-group-append">
+											<button class="btn btn-outline-secondary RoundedBtn" type="button">
+												<span class="sr-only">Submit</span>
+												<img src="images/envelope-ico.png" alt="Submit">
+											</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div><!-- /col -->
+						<div class="col-md-6">
+							<div class="row">
+						<div class="col-lg-6 float-left">
+							<div class="CallUs">
+								<div class="CallUs__CTA">
+									<p><i class="fas fa-2x fa-phone fa-flip-horizontal"></i> Call us on</p>
+								</div><!-- /CallUs__CTA -->
+								<div class="CallUsQuoin">
+									<p><span style="font-weight:500">+27 21 345 765</span></p>
+								</div><!-- /CallUs__Number -->
+							</div><!-- /CallUs -->
+							<!-- /FooterLinkBox -->
+						</div><!-- /col -->
+						<div class="d-none d-lg-block col-lg-6 float-right">
+							<div class="EmailUs">
+								<button class="quoinbutton">EMAIL US</button>
+							</div><!-- /CallUs -->
+							<!-- /FooterLinkBox -->
+						</div><!-- /col -->
+						<div class="col-md-4 float-left">
+						<section class="FooterLinkBox">
+								<h1>Useful link</h1>
+								<ul>
+									<li><a href="#"><span>&gt;</span> For Sale</a></li>
+									<li><a href="#"><span>&gt;</span> To Let</a></li>
+									<li><a href="#"><span>&gt;</span> How does it work?</a></li>
+									<li><a href="#"><span>&gt;</span> Tools</a></li>
+								</ul>
+							</section><!-- /FooterLinkBox -->
+						</div>
+							<div class="col-md-4 float-left">
+							<section class="FooterLinkBox">
+								<h1>Help</h1>
+								<ul>
+									<li><a href="#"><span>&gt;</span> Terms & Conditions</a></li>
+									<li><a href="#"><span>&gt;</span> Information Privacy Policy</a></li>
+									<li><a href="#"><span>&gt;</span> Contact Us</a></li>
+								</ul>
+							</section>
+						</div>
+							<div class="col-md-4 float-right">
+							<section class="FooterLinkBox">
+								<h1>Account info</h1>
+								<ul>
+									<li><a href="#"><span>&gt;</span> Login to My Account</a></li>
+									<li><a href="#"><span>&gt;</span> Latest News</a></li>
+									<li><a href="#"><span>&gt;</span> User Dashboard</a></li>
+									<li><a href="#"><span>&gt;</span> Newsletter</a></li>
+								</ul>
+							</section>
+						</div>
+					</div>
+					</div>
+		
+						<div class="d-none d-lg-block col-lg-3">
+							<div>
+								<p class="howitworks"><span>HOW IT WORKS?</span></p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate neque semper eros faucibus dictum. </p>
+		<p>
+		Suspendisse potenti. Suspendisse libero velit, auctor a ultrices in, vulputate eget nulla. Etiam in elementum quam, quis venenatis tellus. Phasellus ut mauris ut purus cursus congue.</p>
+							</div><!-- /MobileMapBtn -->
+							<!-- /FooterLinkBox -->
+						</div><!-- /col -->
+					</div><!-- /row -->
+					<div class="row">
+						<div class="col">
+							<div class="FooterSocialMedia">
+								<ul class="d-flex">
+									<li>
+										<a href="#" title="Join us on FaceBook" target="_blank">
+											<i class="fab fa-3 fa-facebook-square"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" title="Join us on Twitter" target="_blank">
+											<i class="fab fa-3 fa-twitter-square"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" title="Follow us on Google" target="_blank">
+											<i class="fab fa-3 fa-google-plus-square"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" title="Follow us on Linkedin" target="_blank">
+											<i class="fab fa-3 fa-linkedin"></i>
+										</a>
+									</li>
+								</ul>
+							</div><!-- /FooterSocialMedia -->
+						</div><!-- /col -->
+					</div><!-- /row -->
+					<div class="row">
+						<div class="col">
+							<div class="CopyRight text-center">
+								<p>&copy; 2019 <span>Mowana Properties</span> | <a href="#" target="_blank">Terms & Conditions</a></p>
+							</div><!-- /CopyRight -->
+						</div><!-- /col -->
+					</div><!-- /row -->
+				</div><!-- /FooterInnerBox -->
+			</div><!-- /container -->
+		</footer>
+		
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/picturefill.min.js"></script>
+		<script src="js/fontloader.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/retina.min.js"></script>
+		<script src="js/propslider.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		
+		
+
+		<script src="js/lightslider.min.js"></script>
+
+				<script type="text/javascript">
+$(document).ready(function(){
+  $('#search').click(function(){
+     $('#OfficeSearchFinder').fadeToggle(350); 
+     $('#mobilesearch').fadeToggle(0);
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#SearchButton').click(function(){
+     $('#SearchForm').fadeToggle(350);
+     $('#SearchButton').fadeToggle(0); 
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#closesearch').click(function(){
+    $('#OfficeSearchFinder').fadeToggle(350); 
+     $('#mobilesearch').fadeToggle(0);
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $( "#datepicker" ).datepicker();
+  });
+</script>
+
+		<script>
+			$(document).ready(function(){
+				console.log('lock & load');
+				$('.nav-item').removeClass('active');
+				$('.nav-item--Home').addClass('active');
+				$( ".active > a " ).append( '<span class="sr-only"> (current)</span>' );
+
+				function reload_bsCollapse() {
+					if($(window).width() <= 767) {
+						$("#h1Toggler").attr({
+							'data-toggle': 'collapse',
+							'data-target': '#openRefineSearch'
+						});
+					} else {
+						$("#h1Toggler").removeAttr('data-toggle data-target');
+						$("#openRefineSearch").addClass('show');
+					}
+				}
+
+				$(".DetailsAddToMyWatchlist").click(function(){
+					$(this).toggleClass("DetailsAddedToWatchlist");
+				});
+
+				reload_bsCollapse();
+
+				$(window).on("resize", function () {
+					reload_bsCollapse();
+				});
+
+				var slider = $('#image-gallery').lightSlider({
+					pauseOnHover: true,
+					adaptiveHeight: true,
+					gallery:true,
+					item:1,
+					thumbItem:4,
+					slideMargin: 4,
+					speed:500,
+					pause: 5000,
+					auto:true,
+					loop:true,
+					thumbMargin:4,
+					responsive : [
+					{
+						breakpoint:1439,
+						settings: {
+							thumbItem:6,
+						}
+					},
+					{
+						breakpoint:991,
+						settings: {
+							thumbItem:4
+						}
+					}
+					],
+					onSliderLoad: function() {
+						$('#image-gallery').removeClass('cS-hidden');
+					}
+				});
+
+				$(window).on("resize", function () {
+					slider.refresh();
+				});
+
+			});
+		</script>
+	</body>
+</html>

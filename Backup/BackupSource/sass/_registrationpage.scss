@@ -1,0 +1,73 @@
+/* ===== RegistrationPage ===== */
+
+.SubheadermainheadingReg {
+    font-size: 100px;
+    line-height: 100px;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 25px;
+    color: $prime-color;
+}
+
+.registerbtn {
+    border-radius: 0px;
+    width: 192px;
+}
+
+.regtext {
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.regdetail {
+    margin-top:45px;
+}
+
+@media (max-width: $breakpoint-desktop) {
+.logintext {
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+.regtext {
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+}
+
+@media (max-width: $breakpoint-laptop) {
+.logintext {
+    margin-bottom: 0px;
+    font-size: 13px;
+}
+.regtext {
+    margin-bottom: 0px;
+    font-size: 10px;
+}
+
+.iconslink {
+    right: 0px;
+    left: 10px;
+    position: relative;
+    padding-top: 25px;
+}
+}
+
+@media (max-width: $breakpoint-tablet) {
+
+.login {
+    margin-top: $base__lh;
+}
+}
+
+@media (max-width: $breakpoint-mobile) {
+.SubheadermainheadingReg {
+    font-size: 50px;
+    line-height: 30px;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 25px;
+    color: $prime-color;
+}
+
+.login {
+    margin-top: $base__lh;
+}
+}

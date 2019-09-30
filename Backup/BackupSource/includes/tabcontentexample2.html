@@ -1,0 +1,76 @@
+<div class="VdTabContent">
+	        			<div class="Card-Title-Tab gForm">
+									Ask a question
+									</div><!-- /Card-Title -->
+
+									    <div class="col-sm-12 gForm new1">
+<div class="row">
+
+   <div class="col-md-6 form-group QandA">
+              <input
+                v-validate="'required'"
+                v-model="name"
+                data-vv-as="Name"
+                name="name"
+                type="text"
+                placeholder="Name"
+                class="form-control input-lg">
+            </div>
+               <div class="col-md-6 form-group QandA">
+              <input
+                v-validate="'required'"
+                v-model="surname"
+                data-vv-as="Surname"
+                name="surname"
+                type="text"
+                placeholder="Surname"
+                class="form-control input-lg">
+            </div>
+            <div class="col-md-6 form-group QandA">
+              <input
+                v-validate="'required|mobile'"
+                v-model="mobile"
+                data-vv-as="Cellphone"
+                name="mobile"
+                type="text"
+                placeholder="Cellphone"
+                class="form-control input-lg">
+            </div>
+             <div class="col-md-6 form-group QandA">
+              <input
+                v-validate="'required|email'"
+                v-model="email"
+                data-vv-as="E-Mail"
+                name="email"
+                type="text"
+                placeholder="Email Address"
+                class="form-control input-lg">
+            </div>
+            <div class="col-md-12 form-group QandA">
+              <textarea
+                v-validate="'required'"
+                v-model="message"
+                data-vv-as="Message"
+                rows="6"
+                name="message"
+                placeholder="Message..."
+                class="form-control input-lg"></textarea>
+            </div>
+
+            <div class="col-md-12 form-group QandA">
+              <vue-recaptcha
+                ref="recaptcha"
+                :sitekey="sitekey"
+                @verify="onVerify"
+                @expired="onExpired">
+                <button
+                  :disabled="status==='submitting'"
+                  class="btn btn-primary"
+                  @click="send">Send</button>
+              </vue-recaptcha>
+
+            </div>
+</div>
+
+									    </div>
+</div><!-- /VdTabContent -->
