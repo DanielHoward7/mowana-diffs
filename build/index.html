@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head class="no-js">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="apple-touch-icon-precomposed.png" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="js/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+
+<title>Mowana | Home</title>
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<section class="HomePage__HeaderBox">
+<section class="Main__TopNav">
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<div class="container">
+			<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#auctionNavbarToggler" aria-controls="auctionNavbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a href="/">
+					<img class="headerimg" src="images/navlogo.png" alt="Auction Online logo" width="210" />
+			</a>
+			<div class="collapse navbar-collapse" id="auctionNavbarToggler">
+				<ul class="navbar-nav ml-auto NavBarNav">
+					<li class="nav-item nav-item--Home">
+						<a class="nav-link" href="#"><span>HOME</span></a>
+					</li>
+					<li class="nav-item nav-item--Sale">
+						<a class="nav-link" href="#"><span>FOR SALE</span></a>
+					</li>
+					<li class="nav-item nav-item--ToLet">
+						<a class="nav-link" href="#"><span>TO LET</span></a>
+					</li>
+						<li class="nav-item nav-item--Tools">
+						<a class="nav-link" href="#"><span>TOOLS</span></a>
+					</li>
+						<li class="nav-item nav-item--Login">
+						<a class="nav-link" href="#"><span>LOGIN/REGISTER</span></a>
+					</li>
+				</ul>
+				<ul class="navbar-nav NavBarTools">
+					<li class="nav-item nav-item--Phone">
+						<a class="nav-link" href="#">
+							<i class="fas fa-2x fa-phone fa-flip-horizontal"></i>
+							<span><b>+27 21 1234 5678</b></span>
+						</a>
+					</li>
+					<li class="nav-item nav-item--Facebook">
+						<a class="nav-link" href="#">
+							<i class="fab fa-2x fa-facebook-square"></i>
+						</a>
+					</li>
+					<li class="nav-item nav-item--Twitter">
+						<a class="nav-link" href="#">
+							<i class="fab fa-2x  fa-twitter-square"></i>
+						</a>
+					</li>
+					<li class="nav-item nav-item--Google">
+						<a class="nav-link" href="#">
+							<i class="fab fa-2x  fa-google-plus-square"></i>
+						</a>
+						<li class="nav-item nav-item--Linkedin">
+						<a class="nav-link" href="#">
+						<i class="fab fa-2x  fa-linkedin"></i>
+					</a>
+
+					</li>
+				</ul>
+			</div>
+		</div><!-- /container -->
+	</nav>
+</section><!-- /TopNav -->
+	<section class="HeaderBox justify-content-center align-items-center">
+		<div class="container d-md-flex justify-content-md-around h-100">
+			<div class="text-center HeaderMain">
+				<div class="row h-100">
+					<div class="col-lg-9 my-auto-top">
+				<h1 class="HomeHead">FOR EXPERT AND<br>
+PERSONAL PROPERTY<br>
+SOLUTIONS</h1>
+</div>
+<div class="col-lg-3 my-auto-top">
+				<!--<img class="text-center" src="images/searchbutton.png">-->
+				<button id="search" class="SearchIcon hvr-grow"><img class="text-center" src="images/searchicon.png"></button>
+			</div>
+			<div class="col-lg-12">
+				<section id="OfficeSearch">
+						<img id="closesearch" class="closesearch" src="images/closesearch.png">
+								<ul class="nav nav-tabs SR nav-justified">
+				  					<li class="active tabhead"><a data-toggle="tab" href="#tolet">TO LET</a></li>
+				 					<li class="tabhead"><a data-toggle="tab" href="#forsale">FOR SALE</a></li>
+								</ul>
+							<section class="OfficeSearchBar">
+								<div class="container quoinsearch">
+									<div class="tab-content search SR">
+				
+									<!--To Let Tab -->
+									<div id="tolet" class="tab-pane active">
+										<form class="MultiInputBarForm">
+											<div class="form-row">
+				
+				
+											<div class="form-group col-sm-12 col-md-6 col-lg-4" style="padding-left: 50px;padding-right: 50px;padding-bottom: 25px">
+											<!-- Top Element-->
+											<label for="inputBrand">Keyword</label>
+											<input id="inputBrand" class="form-control">
+				
+											</input>
+				
+											<!-- Bottom Element -->
+											 <div class="SearchBottomBlock">
+											<label for="inputBrand">Location</label>
+												<select id="inputModel" class="form-control custom-select-home ">
+												<option selected>Any Type</option>
+												<option>...</option>
+											</select>
+										</div>
+										</div>
+										<div class="form-group col-sm-12 col-md-6 col-lg-2">
+											<!-- Top Element-->
+											<label for="inputModel">Proporty Type</label>
+											<select id="inputModel" class="form-control custom-select-home ">
+												<option selected>Any Type</option>
+												<option>...</option>
+											</select>
+				
+											<!-- Bottom Element -->
+											<div class="SearchBottomBlock">
+												<label for="inputModel">Proporty ID</label>
+											<input id="inputBrand" class="form-control">
+												
+											</input>
+										</div>
+										</div>
+										<div class="form-group col-sm-12 col-md-12 col-lg-6" style="padding-left: 50px">
+				<!-- Top Element-->
+				  <label class="sliderleft" for="inputMinPrice">Price</label>
+				  <input class="sliderlabel" type="text" id="inputMinPrice" readonly style="border:0; color:#ffffff;float: right;text-align: right;">
+				 
+				<div id="price-range"></div>
+				<label class="sliderlabels float-left">Min Price</label>
+				<label class="sliderlabels float-right">Max Price</label>
+				
+				<!-- Bottom Element -->
+				<div class="SearchBottom">
+				 <label class="sliderleft" for="inputMinSize">Size</label>
+				  <input class="sliderlabel" type="text" id="inputMinSize" readonly style="border:0; color:#ffffff;float: right;text-align: right;">
+				
+				<div id="size-range"></div>
+				<label class="sliderlabels float-left">Min Size</label>
+				<label class="sliderlabels float-right">Max Size</label>
+				</div>
+										</div>
+				
+				
+									</div><!-- /form-row -->
+									<button class="SearchBarIcon hvr-grow"><img class="text-center" src="images/SearchBarIco.png"></button>
+								</form>
+							</div>
+				
+							<!--To Let Tab End-->
+				
+							<!-- Tab For Sale -->
+				
+					<div id="forsale" class="tab-pane">
+								<form class="MultiInputBarForm">
+									<div class="form-row">
+				
+				
+										<div class="form-group col-sm-12 col-md-6 col-lg-4" style="padding-left: 50px;padding-right: 50px;padding-bottom: 25px">
+											<!-- Top Element-->
+											<label for="inputBrand">Keyword</label>
+											<input id="inputBrand" class="form-control">
+				
+											</input>
+				
+											<!-- Bottom Element -->
+											 <div class="SearchBottomBlock">
+											<label for="inputBrand">Location</label>
+												<select id="inputModel" class="form-control custom-select-home ">
+												<option selected>Any Type</option>
+												<option>...</option>
+											</select>
+										</div>
+										</div>
+										<div class="form-group col-sm-12 col-md-6 col-lg-2">
+											<!-- Top Element-->
+											<label for="inputModel">Proporty Type</label>
+											<select id="inputModel" class="form-control custom-select-home ">
+												<option selected>Any Type</option>
+												<option>...</option>
+											</select>
+				
+											<!-- Bottom Element -->
+											<div class="SearchBottomBlock">
+												<label for="inputModel">Proporty ID</label>
+											<input id="inputBrand" class="form-control">
+												
+											</input>
+										</div>
+										</div>
+										<div class="form-group col-sm-12 col-md-12 col-lg-6" style="padding-left: 50px">
+				<!-- Top Element-->
+				  <label class="sliderleft" for="inputMinPriceSale">Price</label>
+				  <input class="sliderlabel" type="text" id="inputMinPriceSale" readonly style="border:0; color:#ffffff;float: right;text-align: right;">
+				 
+				<div id="price-rangesale"></div>
+				<label class="sliderlabels float-left">Min Price</label>
+				<label class="sliderlabels float-right">Max Price</label>
+				
+				<!-- Bottom Element -->
+				<div class="SearchBottom">
+				 <label class="sliderleft" for="inputMinSizeSale">Size</label>
+				  <input class="sliderlabel" type="text" id="inputMinSizeSale" readonly style="border:0; color:#ffffff;float: right;text-align: right;">
+				
+				<div id="size-rangesale"></div>
+				<label class="sliderlabels float-left">Min Size</label>
+				<label class="sliderlabels float-right">Max Size</label>
+				</div>
+										</div>
+				
+				
+									</div><!-- /form-row -->
+									<button class="SearchBarIcon hvr-grow"><img class="text-center" src="images/SearchBarIco.png"></button>
+								</form>
+							</div>
+				
+							<!-- Tab For Sale End -->
+						</div>
+							</div><!-- /container -->
+						</section><!-- /FullBar -->
+					</section><!-- /FindYourVechile -->
+				
+			</div>
+
+		</div>
+		
+			</div>
+
+		</div>
+	
+
+</section>
+
+
+			</section>
+
+		<section id="WelcomeSection" style="background-color: #F9F9F9">
+			<div class="text-center">
+    					<p class="WelcomeText">WELCOME TO MOWANA PROPERTIES</p>
+    				</div>
+			<div class="container">
+    			<div class="row">
+						<div class="col-sm-6 col-md-6 col-lg-3">
+							<img class="text-center hvr-grow img-responsive img-center bg_shadow" src="images/find-proporty.png">
+							<p class="text-center col-mt-1" style="font-weight: 400">FIND YOUR<br> PROPERTY</p>
+						</div>
+						<div class="col-sm-6  col-md-6 col-lg-3">
+							<img class="text-center hvr-grow img-responsive img-center bg_shadow" src="images/view-proporty.png">
+							<p class="text-center col-mt-1" style="font-weight: 400">VIEW YOUR<br> APARTMENTS</p>
+						</div>
+						<div class="col-sm-6  col-md-6 col-lg-3">
+							<img class="text-center hvr-grow img-responsive img-center bg_shadow" src="images/locations-proporty.png">
+							<p class="text-center col-mt-1" style="font-weight: 400">VARIOUS<br> LOCATIONS</p>
+						</div>
+						<div class=" col-sm-6 col-md-6 col-lg-3">
+							<img class="text-center hvr-grow img-responsive img-center bg_shadow" src="images/calculator-proporty.png">
+							<p class="text-center col-mt-1" style="font-weight: 400">PROPERTY<br> CALCULATORS</p>
+						</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="FeaturedSection">
+
+			<div class="text-center">
+    		<p class="WelcomeText" style="font-size: 48px">FEATURED PROPERTIES</p>
+    		</div>
+
+			<div class="container">
+    			<div class="row">
+						<!--Card 1-->
+
+						<div class="col-sm-12 col-md-6 col-lg-4">
+
+							<div class="row Card-Head">
+
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<div class="Card-Title">
+										FOR SALE
+									</div><!-- /Card-Title -->
+								</div>
+
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<div class="Card-TimerBox">
+										<b>15</b> | 23 | 55 | 08
+									</div><!-- /Card-TimerBox -->
+								</div>
+							</div>
+
+							<div class="card">
+
+								<div class="Obj-Fit__TodaysFeaturedProperty">
+									<img class="card-img-top" src="images/officephoto1.png" alt="Property Description">
+								</div><!-- /Obj-Fit__TodaysFeaturedProperty -->
+
+								<div class="Card-Prop-Type">
+									<label class="Title-Label">Industrial</label>
+								</div>
+
+								<div class="Featured-Details">
+									<a data-v-392dc281="" onclick="return false" title="Add to your watchlist" class="AddToMyWatchlist AddedToWatchlist"><span data-v-392dc281="" class="sr-only">Add to my watchlist</span></a>
+									<div class="col-lg-12 float-left" style="padding-left: 0px">
+										<ul>
+											<li style="font-weight: bold;">Property Name</li>
+											<li>Location: Epping 1 Industrial</li>
+											<li>Size: 15 000/m2</li>
+										</ul>
+									</div>
+								</div>
+									<label class="Cost-Label">Price: R3 500 000</label>
+
+								<div class="Card-More-Btn">
+									<button class="quoinbutton hvr-grow">MORE INFO</button>
+								</div>
+								
+							</div>
+						</div><!-- Col Card End -->
+
+						<!--Card 1 End-->
+
+						<!--Card 2-->
+
+						<div class="col-sm-12 col-md-6 col-lg-4">
+
+							<div class="row Card-Head">
+
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<div class="Card-Title">
+										FOR SALE
+									</div><!-- /Card-Title -->
+								</div>
+
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<div class="Card-TimerBox">
+										<b>15</b> | 23 | 55 | 08
+									</div><!-- /Card-TimerBox -->
+								</div>
+							</div>
+
+							<div class="card">
+
+								<div class="Obj-Fit__TodaysFeaturedProperty">
+									<img class="card-img-top" src="images/officephoto2.png" alt="Property Description">
+								</div><!-- /Obj-Fit__TodaysFeaturedProperty -->
+
+								<div class="Card-Prop-Type">
+									<label class="Title-Label">Office</label>
+								</div>
+
+								<div class="Featured-Details">
+									<a data-v-392dc281="" onclick="return false" title="Add to your watchlist" class="AddToMyWatchlist AddedToWatchlist"><span data-v-392dc281="" class="sr-only">Add to my watchlist</span></a>
+									<div class="col-lg-12 float-left" style="padding-left: 0px">
+										<ul>
+											<li style="font-weight: bold;">Property Name</li>
+											<li>Location: Epping 1 Industrial</li>
+											<li>Size: 15 000/m2</li>
+										</ul>
+									</div>
+								</div>
+									<label class="Cost-Label">Price: R3 500 000</label>
+
+								<div class="Card-More-Btn">
+									<button class="quoinbutton hvr-grow">MORE INFO</button>
+								</div>
+								
+							</div>
+						</div><!-- Col Card End -->
+
+						<!--Card 2 End-->
+
+						<!--Card 3-->
+
+						<div class="col-sm-12 col-md-6 col-lg-4">
+
+							<div class="row Card-Head">
+
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<div class="Card-Title">
+										FOR SALE
+									</div><!-- /Card-Title -->
+								</div>
+
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<div class="Card-TimerBox">
+										<b>15</b> | 23 | 55 | 08
+									</div><!-- /Card-TimerBox -->
+								</div>
+							</div>
+
+							<div class="card">
+
+								<div class="Obj-Fit__TodaysFeaturedProperty">
+									<img class="card-img-top" src="images/officephoto3.png" alt="Property Description">
+								</div><!-- /Obj-Fit__TodaysFeaturedProperty -->
+
+								<div class="Card-Prop-Type">
+									<label class="Title-Label">Rental</label>
+								</div>
+
+								<div class="Featured-Details">
+									<a data-v-392dc281="" onclick="return false" title="Add to your watchlist" class="AddToMyWatchlist AddedToWatchlist"><span data-v-392dc281="" class="sr-only">Add to my watchlist</span></a>
+									<div class="col-lg-12 float-left" style="padding-left: 0px">
+										<ul>
+											<li style="font-weight: bold;">Property Name</li>
+											<li>Location: Epping 1 Industrial</li>
+											<li>Size: 15 000/m2</li>
+										</ul>
+									</div>
+								</div>
+									<label class="Cost-Label">Price: R3 500 000</label>
+
+								<div class="Card-More-Btn">
+									<button class="quoinbutton hvr-grow">MORE INFO</button>
+								</div>
+								
+							</div>
+						</div><!-- Col Card End -->
+
+						<!--Card 3 End-->
+
+						<!--Card 4-->
+
+						<div class="col-sm-12 col-md-6 col-lg-4">
+
+							<div class="row Card-Head">
+
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<div class="Card-Title">
+										TO LET
+									</div><!-- /Card-Title -->
+								</div>
+
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<div class="Card-TimerBox">
+										<b>15</b> | 23 | 55 | 08
+									</div><!-- /Card-TimerBox -->
+								</div>
+							</div>
+
+							<div class="card">
+
+								<div class="Obj-Fit__TodaysFeaturedProperty">
+									<img class="card-img-top" src="images/officephoto4.png" alt="Property Description">
+								</div><!-- /Obj-Fit__TodaysFeaturedProperty -->
+
+								<div class="Card-Prop-Type">
+									<label class="Title-Label">Retail</label>
+								</div>
+
+								<div class="Featured-Details">
+									<a data-v-392dc281="" onclick="return false" title="Add to your watchlist" class="AddToMyWatchlist AddedToWatchlist"><span data-v-392dc281="" class="sr-only">Add to my watchlist</span></a>
+									<div class="col-lg-12 float-left" style="padding-left: 0px">
+										<ul>
+											<li style="font-weight: bold;">Property Name</li>
+											<li>Location: Epping 1 Industrial</li>
+											<li>Rate/m2: R140.00</li>
+											<li>Size: 15 000/m2</li>
+										</ul>
+									</div>
+								</div>
+									<label class="Cost-Label">Price: R35 000/pm</label>
+
+								<div class="Card-More-Btn">
+									<button class="quoinbutton hvr-grow">MORE INFO</button>
+								</div>
+								
+							</div>
+						</div><!-- Col Card End -->
+
+						<!--Card 4 End-->
+
+						<!--Card 5-->
+
+						<div class="col-sm-12 col-md-6 col-lg-4">
+
+							<div class="row Card-Head">
+
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<div class="Card-Title">
+										TO LET
+									</div><!-- /Card-Title -->
+								</div>
+
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<div class="Card-TimerBox">
+										<b>15</b> | 23 | 55 | 08
+									</div><!-- /Card-TimerBox -->
+								</div>
+							</div>
+
+							<div class="card">
+
+								<div class="Obj-Fit__TodaysFeaturedProperty">
+									<img class="card-img-top" src="images/officephoto5.png" alt="Property Description">
+								</div><!-- /Obj-Fit__TodaysFeaturedProperty -->
+
+								<div class="Card-Prop-Type">
+									<label class="Title-Label">Vacant Land</label>
+								</div>
+
+								<div class="Featured-Details">
+									<a data-v-392dc281="" onclick="return false" title="Add to your watchlist" class="AddToMyWatchlist AddedToWatchlist"><span data-v-392dc281="" class="sr-only">Add to my watchlist</span></a>
+									<div class="col-lg-12 float-left" style="padding-left: 0px">
+										<ul>
+											<li style="font-weight: bold;">Property Name</li>
+											<li>Location: Epping 1 Industrial</li>
+											<li>Rate/m2: R140.00</li>
+											<li>Size: 15 000/m2</li>
+										</ul>
+									</div>
+								</div>
+									<label class="Cost-Label">Price: R35 000/pm</label>
+
+								<div class="Card-More-Btn">
+									<button class="quoinbutton hvr-grow">MORE INFO</button>
+								</div>
+								
+							</div>
+						</div><!-- Col Card End -->
+
+						<!--Card 5 End-->
+
+						<!--Card 6-->
+
+						<div class="col-sm-12 col-md-6 col-lg-4">
+
+							<div class="row Card-Head">
+
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<div class="Card-Title">
+										TO LET
+									</div><!-- /Card-Title -->
+								</div>
+
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<div class="Card-TimerBox">
+										<b>15</b> | 23 | 55 | 08
+									</div><!-- /Card-TimerBox -->
+								</div>
+							</div>
+
+							<div class="card">
+
+								<div class="Obj-Fit__TodaysFeaturedProperty">
+									<img class="card-img-top" src="images/officephoto6.png" alt="Property Description">
+								</div><!-- /Obj-Fit__TodaysFeaturedProperty -->
+
+								<div class="Card-Prop-Type">
+									<label class="Title-Label">Business Parks</label>
+								</div>
+
+								<div class="Featured-Details">
+									<a data-v-392dc281="" onclick="return false" title="Add to your watchlist" class="AddToMyWatchlist AddedToWatchlist"><span data-v-392dc281="" class="sr-only">Add to my watchlist</span></a>
+									<div class="col-lg-12 float-left" style="padding-left: 0px">
+										<ul>
+											<li style="font-weight: bold;">Property Name</li>
+											<li>Location: Epping 1 Industrial</li>
+											<li>Rate/m2: R140.00</li>
+											<li>Size: 15 000/m2</li>
+										</ul>
+									</div>
+								</div>
+									<label class="Cost-Label">Price: R35 000/pm</label>
+
+								<div class="Card-More-Btn">
+									<button class="quoinbutton hvr-grow">MORE INFO</button>
+								</div>
+								
+							</div>
+						</div><!-- Col Card End -->
+
+						<!--Card 6 End-->
+
+				</div><!--/row-->
+			</div><!--/container-->
+		</section>
+
+		<section id="HowItWorksSectionButtons">
+
+			<div class="container">
+				<div class="row">
+
+					<div class="col-sm-6" style="text-align:right;margin-left: 15px;">
+						  <button
+                  :disabled="status==='submitting'"
+                  class="btn hiwbtntl"
+                  @click="send">To Let</button>
+					</div>
+
+					<div class="col-sm-6" style="margin-left: -30px;">
+						  <button
+                  :disabled="status==='submitting'"
+                  class="btn hiwbtn btnactivefs"
+                  @click="send">For Sale</button>
+					</div>
+
+				</div>
+			</div>
+			
+		</section>
+
+		<section id="HowItWorksSectionForSale" style="background-color: #373236">
+			<div class="container" style="max-width: 1920px; padding: 0px">
+    			<div class="row" style="margin: 0px;">
+					<div class="col-md-6 howitworksimage">
+						
+					</div>
+					<div class="col-md-6 howitworksblock">
+						<p class="howitworksheading">How it Works</p>
+						<p class="howitworkssubheading">Find your next property<br>quick and easy!</p>
+						<p class="howitworkstext">Pearl Valley is well established 5 star residential and leisure resort midway between Franschhoek and Paarl, roughly 25 minutes drive from Stellenbosch and 50 minutes from Cape Town. It boasts the Number 5 rated golf course of SA and has international recognition for this Jack Nicklaus course. The estate offers a variety of different property propositions depending on one’s needs and lifestyle.</p>
+						<button class="quoinbutton">READ MORE</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="HowItWorksSectionToLet" style="background-color: #373236">
+			<div class="container" style="max-width: 1920px; padding: 0px">
+    			<div class="row" style="margin: 0px;">
+    				<div class="col-md-6 howitworksimageMobile">
+						
+					</div>
+					<div class="col-md-6 howitworksblocktl">
+						<p class="howitworksheading">How it Works</p>
+						<p class="howitworkssubheading">Find your next property<br>quick and easy!</p>
+						<p class="howitworkstexttl">Pearl Valley is well established 5 star residential and leisure resort midway between Franschhoek and Paarl, roughly 25 minutes drive from Stellenbosch and 50 minutes from Cape Town. It boasts the Number 5 rated golf course of SA and has international recognition for this Jack Nicklaus course. The estate offers a variety of different property propositions depending on one’s needs and lifestyle.</p>
+						<button class="quoinbutton">READ MORE</button>
+					</div>
+					<div class="col-md-6 howitworksimagetl">
+						
+					</div>
+				</div>
+			</div>
+		</section>
+
+<footer class="MainFooter">
+	<div class="container">
+		<div class="JamiesBox">
+		
+			</div><!-- /MrPointyBox -->
+		<div class="FooterInnerBox">
+			<div class="row">
+				<div class="col-md-6 col-lg-3">
+					<img class="img-responsive" src="images/footerlogo.png" style="padding-bottom: 25px" alt="Quoin Online logo" />
+					<p>We know the difference is in the details and that’s why our service stands out based on it’s simplicity, effectiveness,  transparency and quality.</p>
+					<form class="SmallInputForm">
+						<div class="form-row">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="SUBSCRIBE TO NEWSLETTER" aria-label="Subscribe to Newsletter" aria-describedby="Search">
+								<div class="input-group-append">
+									<button class="btn btn-outline-secondary RoundedBtn" type="button">
+										<span class="sr-only">Submit</span>
+										<img src="images/envelope-ico.png" alt="Submit">
+									</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div><!-- /col -->
+				<div class="col-md-6">
+					<div class="row">
+				<div class="col-lg-6 float-left">
+					<div class="CallUs">
+						<div class="CallUs__CTA">
+							<p><i class="fas fa-2x fa-phone fa-flip-horizontal"></i> Call us on</p>
+						</div><!-- /CallUs__CTA -->
+						<div class="CallUsQuoin">
+							<p><span style="font-weight:500">+27 21 345 765</span></p>
+						</div><!-- /CallUs__Number -->
+					</div><!-- /CallUs -->
+					<!-- /FooterLinkBox -->
+				</div><!-- /col -->
+				<div class="d-none d-lg-block col-lg-6 float-right">
+					<div class="EmailUs">
+						<button class="quoinbutton">EMAIL US</button>
+					</div><!-- /CallUs -->
+					<!-- /FooterLinkBox -->
+				</div><!-- /col -->
+				<div class="col-md-4 float-left">
+				<section class="FooterLinkBox">
+						<h1>Useful link</h1>
+						<ul>
+							<li><a href="#"><span>&gt;</span> For Sale</a></li>
+							<li><a href="#"><span>&gt;</span> To Let</a></li>
+							<li><a href="#"><span>&gt;</span> How does it work?</a></li>
+							<li><a href="#"><span>&gt;</span> Tools</a></li>
+						</ul>
+					</section><!-- /FooterLinkBox -->
+				</div>
+					<div class="col-md-4 float-left">
+					<section class="FooterLinkBox">
+						<h1>Help</h1>
+						<ul>
+							<li><a href="#"><span>&gt;</span> Terms & Conditions</a></li>
+							<li><a href="#"><span>&gt;</span> Information Privacy Policy</a></li>
+							<li><a href="#"><span>&gt;</span> Contact Us</a></li>
+						</ul>
+					</section>
+				</div>
+					<div class="col-md-4 float-right">
+					<section class="FooterLinkBox">
+						<h1>Account info</h1>
+						<ul>
+							<li><a href="#"><span>&gt;</span> Login to My Account</a></li>
+							<li><a href="#"><span>&gt;</span> Latest News</a></li>
+							<li><a href="#"><span>&gt;</span> User Dashboard</a></li>
+							<li><a href="#"><span>&gt;</span> Newsletter</a></li>
+						</ul>
+					</section>
+				</div>
+			</div>
+			</div>
+
+				<div class="d-none d-lg-block col-lg-3">
+					<div>
+						<p class="howitworks"><span>HOW IT WORKS?</span></p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate neque semper eros faucibus dictum. </p>
+<p>
+Suspendisse potenti. Suspendisse libero velit, auctor a ultrices in, vulputate eget nulla. Etiam in elementum quam, quis venenatis tellus. Phasellus ut mauris ut purus cursus congue.</p>
+					</div><!-- /MobileMapBtn -->
+					<!-- /FooterLinkBox -->
+				</div><!-- /col -->
+			</div><!-- /row -->
+			<div class="row">
+				<div class="col">
+					<div class="FooterSocialMedia">
+						<ul class="d-flex">
+							<li>
+								<a href="#" title="Join us on FaceBook" target="_blank">
+									<i class="fab fa-3 fa-facebook-square"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Join us on Twitter" target="_blank">
+									<i class="fab fa-3 fa-twitter-square"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Follow us on Google" target="_blank">
+									<i class="fab fa-3 fa-google-plus-square"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Follow us on Linkedin" target="_blank">
+									<i class="fab fa-3 fa-linkedin"></i>
+								</a>
+							</li>
+						</ul>
+					</div><!-- /FooterSocialMedia -->
+				</div><!-- /col -->
+			</div><!-- /row -->
+			<div class="row">
+				<div class="col">
+					<div class="CopyRight text-center">
+						<p>&copy; 2019 <span>Mowana Properties</span> | <a href="#" target="_blank">Terms & Conditions</a></p>
+					</div><!-- /CopyRight -->
+				</div><!-- /col -->
+			</div><!-- /row -->
+		</div><!-- /FooterInnerBox -->
+	</div><!-- /container -->
+</footer>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/picturefill.min.js"></script>
+<script src="js/fontloader.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/retina.min.js"></script>
+<script src="js/propslider.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#search').click(function(){
+     $('#OfficeSearch').fadeToggle(350); 
+     $('#search').fadeToggle(0);
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#closesearch').click(function(){
+    $('#OfficeSearch').fadeToggle(350); 
+     $('#search').fadeToggle(0);
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(".hiwbtntl").click(function () {
+   $(this).addClass("btnactivetl");  
+    $('button').removeClass('btnactivefs');
+    $('#HowItWorksSectionToLet').fadeToggle(0); 
+    $('#HowItWorksSectionForSale').hide();      
+});
+
+$(".hiwbtn").click(function () {
+   $(this).addClass("btnactivefs");  
+    $('button').removeClass('btnactivetl');
+    $('#HowItWorksSectionToLet').hide(); 
+    $('#HowItWorksSectionForSale').fadeToggle(0);       
+});
+
+</script>
+
+		<script>
+		$(document).ready(function(){
+			console.log('lock & load');
+			$('.nav-item').removeClass('active');
+			$('.nav-item--Home').addClass('active');
+			$( ".active > a " ).append( '<span class="sr-only"> (current)</span>' );
+
+			$('.TodaysFeaturedVehicles .card-body, .RecentlyAdded .card-body').prepend('<a class="AddToMyWatchlist" onclick="return false" title="Add to your watchlist"><span class="sr-only">Add to my watchlist</span></a>');
+
+				$(".AddToMyWatchlist").click(function(){
+					$(this).toggleClass("AddedToWatchlist");
+				});
+
+		});
+	</script>
+</body>
+</html>
